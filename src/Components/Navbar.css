@@ -1,0 +1,8 @@
+.nav-bg{
+    transform: scale(1.2) skew(30deg, 20deg);
+}
+
+.nav-extend{
+    animation: nav-open 1s ease-out 1 normal forwards;
+    background-color: var(--nav-color);
+}
