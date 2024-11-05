@@ -1,36 +1,37 @@
-import React from 'react'
-import { styled } from 'styled-components';
-import './Navbar.css'
-const Li= styled.li`
-    padding: 20px 40px;
-    border: 1px;
-    cursor:pointer;
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './NavBar.css';
 
-    &:hover{
-        background-color: yellowgreen;
-    }
-`
+function Navbar() {
+  const [isShrunk, setIsShrunk] = useState(false);
 
-const Navbar = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsShrunk(true);
+      } else {
+        setIsShrunk(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // Clean up on component unmount
+    };
+  }, []);
+
   return (
-    <>
-    <div id="current-event"></div>
-    <div className="navbar w-full absolute left-0 z-50 " >
-      <div className="nav-extend mx-40 ">
-        {/* <Logo/> */}
-        <ul className='flex justify-between '>
-          <Li>Home</Li>
-          <Li>Events</Li>
-          <Li>About</Li>
-          <Li>Sponsors</Li>
-          <Li>Blogs</Li>
-          <Li>Team</Li>
-        </ul>
-        
+    <nav className={`navbar ${isShrunk ? 'shrink' : ''}`}>
+      <h3>Finance Club NIT Silchar</h3>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/events">Events</Link>
+        <Link to="/sponser">Sponser</Link>
+        <Link to="/blog">Blog</Link>
       </div>
-    </div>
-    </>
-  )
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

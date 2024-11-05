@@ -1,0 +1,351 @@
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+  }
+
+  .events-intro {
+    background-color: #242424;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.events-intro h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.events-intro p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    color: #5a5a5a;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+}
+
+.col-md-4 {
+    max-width: 400px;
+    /* background-color: #232323; */
+    padding: 10px;
+    margin: auto;
+}
+
+
+
+
+
+
+/*Fests*/
+
+.fests-intro {
+    background-color: #000000; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.fests-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; 
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+
+.fests-intro p {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem; 
+    color: #666; 
+}
+
+.fest-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.fest-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; 
+    font-weight: 600;
+    color: #333; 
+}
+
+.fest-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; 
+    color: #555; 
+}
+
+
+
+
+/*Conferences*/
+
+.conferences-intro {
+    background-color: #292929; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.conferences-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; 
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+
+.conferences-intro p {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem; 
+    color: #666; 
+}
+
+.conference-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.conference-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; 
+    font-weight: 600;
+    color: #333; 
+}
+
+.conference-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; 
+    color: #555; 
+}
+
+
+
+
+
+/* competitions  */
+
+.competitions-intro {
+    background-color: #000000; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.competitions-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; 
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+
+.competitions-intro p {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem; 
+    color: #666; 
+}
+
+.competition-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.competition-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; 
+    font-weight: 600;
+    color: #333; 
+}
+
+.competition-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; 
+    color: #555; 
+}
+
+
+
+/*    Crypto  */
+
+.crypto-intro {
+    background-color: #222222; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.crypto-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; 
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+
+.crypto-intro p {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem; 
+    color: #666; 
+}
+
+.crypto-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.crypto-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; 
+    font-weight: 600;
+    color: #333; 
+}
+
+.crypto-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; 
+    color: #555; 
+}
+
+
+/*Internship */
+
+.intern-intro {
+    background-color: #000000; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.intern-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; 
+    font-weight: 700;
+    margin-bottom: 20px; 
+}
+
+.intern-intro p {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem; 
+    color: #666; 
+}
+
+.intern-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.intern-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; 
+    font-weight: 600;
+    color: #333; 
+}
+
+.intern-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; 
+    color: #555; 
+}
+
+
+
+
+/*Bootcamps and workshops*/
+
+.bootcamp-intro {
+    background-color: #4f4f4f; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.bootcamp-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bootcamp-intro p {
+    font-family: Arial, sans-serif;
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.bootcamp-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.bootcamp-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.bootcamp-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+/*Sessions*/
+
+.sessions-intro {
+    background-color: #070707; 
+    text-align: center;
+    padding: 50px 0;
+}
+
+.sessions-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #d4af37; 
+    font-weight: 700;
+    margin-bottom: 30px; 
+}
+
+.session-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.session-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem; 
+    font-weight: 600;
+    color: #333; 
+}
+
+.session-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem; 
+    color: #555; 
+}
