@@ -1,7 +1,6 @@
 import React from 'react'
 import About from '../Components/About'
 import { useInView } from "react-intersection-observer";
-import Navbar from '../Components/Navbar';
 
 const Home = () => {
 const { ref, inView, entry } = useInView({ threshold: 0,});

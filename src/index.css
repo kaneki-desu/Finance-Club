@@ -2,3 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --background: #ffff;
+    --text-primary:#000;
+    --text-secondary:#393838;
+    --shadowColor:
+}
+:root{
+    background: var(--background);
+    color: var(--text-primary);
+
+    display: flex;
+    flex-direction: column;
+}
+.dark{
+    --background: #000;
+    --text-primary:#fff;
+    --text-secondary:#393838;
+}
+.light{
+    --background: #ffff;
+    --text-primary:#000;
+    --text-secondary:#393838;
+}
+body{
+    background: var(--background);
+}
+body *{
+    color: var(--text-primary);
+    
+}
