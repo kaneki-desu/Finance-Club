@@ -29,6 +29,9 @@ body{
     background: var(--background);
 }
 body *{
-    color: var(--text-primary);
+    color: var(--text-primary);   
+}
+.shadowNav{
     
+    box-shadow:0px 0px 16px -6px var(--text-primary);
 }

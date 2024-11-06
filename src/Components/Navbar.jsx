@@ -20,7 +20,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={` shadow-lg shadow-[--text-primary] sticky w-3/5 flex items-center gap-10 justify-between px-10 p-5 m-auto  rounded-b-2xl -top-4 z-50 -mt-1 ${isShrunk ? 'shrink' : ''} `}>
+    <nav className={`shadowNav  sticky w-3/5 flex items-center gap-10 justify-between px-10 p-5 m-auto  rounded-b-3xl -top-4 z-50 -mt-1 ${isShrunk ? 'shrink' : ''} `}>
         <div className='flex flex-col justify-start text-left'><p>FINANCE CLUB & INVESTMENT CLUB </p>
               <p>NIT SILCHAR</p>
         </div>
