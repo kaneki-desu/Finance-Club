@@ -20,10 +20,12 @@ function App() {
   const lightTheme=()=>{
     setThemeMode('light')
   }
+
   useEffect(()=>{
     console.log(themeMode)
     document.querySelector('html').classList.remove('dark', 'light')
     document.querySelector('html').classList.add(themeMode)
+    
   })
   return (
     <>

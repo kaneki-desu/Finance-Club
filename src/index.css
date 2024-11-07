@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* C:\Users\sibaj\finance-club\src\Fonts\Archivo_Narrow\static\ArchivoNarrow-Regular.ttf */
+@font-face {
+    font-family: 'Archivo_Narrow';
+    src: local('Archivo_Narrow'),
+      url('\Fonts\Archivo_Narrow\static\ArchivoNarrow-Regular.ttf') format('truetype');
+  }
 :root{
     --background: #ffff;
     --text-primary:#000;
@@ -11,7 +17,6 @@
 :root{
     background: var(--background);
     color: var(--text-primary);
-
     display: flex;
     flex-direction: column;
 }
@@ -23,15 +28,87 @@
 .light{
     --background: #ffff;
     --text-primary:#000;
-    --text-secondary:#393838;
+    --text-secondary:#000000cb;
 }
 body{
     background: var(--background);
+    font-family: 'Archivo';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
 }
 body *{
     color: var(--text-primary);   
 }
 .shadowNav{
-    
     box-shadow:0px 0px 16px -6px var(--text-primary);
+}
+.absolute-center{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes expand-underline {
+    0%{width: 0px;}
+    100%{width: 85%;}   
+}
+@keyframes shrink-underline {
+    0%{width: 85%;}   
+    100%{width: 0px;}
+}
+.NavUnderline{
+    position: relative;
+}
+.NavUnderline::after{
+    animation: shrink-underline 0.5s ease-out  both;
+    content: ''; /* your pseudo-element content */
+    position: absolute;
+    z-index: 30;
+    height: 3px;
+    background-color: var(--text-primary);
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    bottom: -4px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.NavUnderline:hover::after{
+    animation: expand-underline 0.5s ease-out alternate both;
+}
+@keyframes Text-Change {
+    0%{transform:translateY(0);}
+    100%{transform:translateY(0);}
+    28%{transform:translateY(0);}
+    33%{transform:translateY(-112px);}
+    62%{color:var(--text-primary);transform:translateY(-112px);}
+    67%{transform:translateY(calc(112px * -2) );}
+    95%{transform:translateY(calc(112px * -2) );}
+    /* 70%{transform:translateY(-100px);}
+    75%{transform:translateY(-150px);}
+    95%{transform:translateY(-150px);} */
+}
+.inner-heading{
+    --text-size:112px;
+     width: 500px;
+    height: 120px;
+    
+    font-size: 112px;
+    text-transform: uppercase;
+    line-height: 1;
+    overflow: hidden;
+}
+.inner-heading div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: left;
+    text-align: left;
+    color: var(--text-primary);
+    animation: Text-Change 5s ease infinite ;
+}
+.hero{
+    background-image: url("./images//light-bg.png"); /* fallback */
+    background-image: linear-gradient(transparent, #000000); 
 }
