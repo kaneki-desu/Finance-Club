@@ -1,26 +1,51 @@
-.navbar {
-    width: 100%;
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    background-color: rgb(0, 0, 0, 0.5);
-    transition: all 0.3s;
-    top: 0;
-    z-index: 1000;
-    
-  }
+:root {
+  --navbar-bg: #ffffff;
+  --navbar-color: #000000;
+  --navbar-link-hover: #007bff;
 
-  .navbar.shrink {
-    padding: 10px 10px;
-    background-color: rgb(75, 75, 75, 0.8);
-  }
-  
+  --background-color: #f4f4f4; /* Page background for light mode */
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --navbar-bg: #333333; /* Dark navbar */
+  --navbar-color: #ffffff;
+  --navbar-link-hover: #f4d03f;
+
+  --background-color: #121212; /* Page background for dark mode */
+  --text-color: #ffffff;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--navbar-bg, #ffffff); /* Default to light */
+  color: var(--navbar-color, #000000); /* Default to black */
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.shrink {
+  padding: 10px 20px; /* Smaller padding on scroll */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--navbar-link-hover, #007bff); /* Highlight on hover */
+}
+
+
   .navbar h3 {
     color: #eaeaea;
     font-family: 'Fredoka One', sans-serif;

@@ -1,3 +1,22 @@
+:root {
+  --navbar-bg: #ffffff;
+  --navbar-color: #000000;
+  --navbar-link-hover: #007bff;
+
+  --background-color: #f4f4f4; /* Page background for light mode */
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --navbar-bg: #333333; /* Dark navbar */
+  --navbar-color: #ffffff;
+  --navbar-link-hover: #f4d03f;
+
+  --background-color: #121212; /* Page background for dark mode */
+  --text-color: #ffffff;
+}
+
+
 @font-face {
   font-family:KG Happy;
   src: url('./Fonts/KGHAPPY.ttf') ,
@@ -17,11 +36,26 @@
 }
 body{
   --nav-color:#0b121f;
-  --theme-color:#141d2b;
+  --theme-color-dark:#141d2b;
+  --theme-color-light: #ffffff;
   --money-color:#9fef00;
   /* --money-color:#c7ef00; */
-  background-color: var(--theme-color);
+  background-color: var(--theme-color-dark);
+  --color-background: #fafafa;
+  --color-foreground: #1f2023;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: var(--theme-color-dark);
+      color: var(--theme-color-light);
+  }
+}
+
+.App-header {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
