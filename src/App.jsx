@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'rea
 import Navbar from './Components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Sponsor from './pages/Sponser';
+import Sponsor from './pages/Sponsor';
 import Events from './pages/Events';
 import Blog from './pages/Blog';
 import React, { useEffect, useState } from 'react';

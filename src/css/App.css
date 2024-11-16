@@ -12,12 +12,12 @@
   max-height: 100vh;
   text-align: center;
   height: 100vh;
-  color: white; /*need change*/
+  color: white;
   overflow-x: hidden;
 }
 body{
   background-color: var(--background-color);
-  color: var(--text-color);
+  /* color: var(--text-color); */
   margin: 0;
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -28,11 +28,6 @@ body{
       color: var(--theme-color-light);
   }
 }
-
-/* .App-header {
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-} */
 
 /* Navbar */
 .navbar {
@@ -45,7 +40,7 @@ body{
 }
 
 .navbar a {
-  color: var(--navbar-color);
+  /* color: var(--navbar-color); */
   text-decoration: none;
   margin: 0 var(--spacing-sm);
   font-size: var(--font-size-md);

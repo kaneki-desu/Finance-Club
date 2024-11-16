@@ -13,8 +13,8 @@
     --primary-color: #0b121f;
     --theme-color-dark: #141d2b;
     --theme-color-light: #ffffff;
-    --accent-color: #9fef00; /* Green Accent */
-    --secondary-color: #c7ef00;
+    --accent-color: #ffffff; /* Green Accent */
+    --secondary-color: #ffffff;
   
     /* Fonts */
     --font-heading: "KG Happy", Georgia, "Times New Roman", Times, serif;
@@ -45,11 +45,26 @@
     --navbar-link-hover: #f4d03f;
   
     --background-color: #121212; /* Page background for dark mode */
-    --text-color: #ffffff;
+    --text-color: #040303;
   
     --theme-color-dark: #121212;
     --theme-color-light: #eaeaea;
     --accent-color: #bb86fc; /* Purple Accent for dark mode */
     --secondary-color: #03dac6;
   }
+
+
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+  
   
