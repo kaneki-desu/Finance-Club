@@ -1,0 +1,55 @@
+/* ================== Default Theme Variables ================== */
+:root {
+    /* Navbar */
+    --navbar-bg: #ffffff;
+    --navbar-color: #000000;
+    --navbar-link-hover: #007bff;
+  
+    /* Backgrounds and Text */
+    --background-color: #f4f4f4; /* Page background for light mode */
+    --text-color: #000000;
+  
+    /* Colors */
+    --primary-color: #0b121f;
+    --theme-color-dark: #141d2b;
+    --theme-color-light: #ffffff;
+    --accent-color: #9fef00; /* Green Accent */
+    --secondary-color: #c7ef00;
+  
+    /* Fonts */
+    --font-heading: "KG Happy", Georgia, "Times New Roman", Times, serif;
+    --font-body: Arial, sans-serif;
+  
+    /* Font Sizes */
+    --font-size-xl: 3rem;
+    --font-size-lg: 2rem;
+    --font-size-md: 1rem;
+    --font-size-sm: 0.875rem;
+  
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+  
+    /* Shadows */
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+    /* Animations */
+    --hover-shadow: drop-shadow(0 0 2em var(--accent-color));
+  }
+  
+  /* ================== Dark Theme Variables ================== */
+  body.dark-mode {
+    --navbar-bg: #333333;
+    --navbar-color: #ffffff;
+    --navbar-link-hover: #f4d03f;
+  
+    --background-color: #121212; /* Page background for dark mode */
+    --text-color: #ffffff;
+  
+    --theme-color-dark: #121212;
+    --theme-color-light: #eaeaea;
+    --accent-color: #bb86fc; /* Purple Accent for dark mode */
+    --secondary-color: #03dac6;
+  }
+  

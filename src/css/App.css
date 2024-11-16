@@ -1,22 +1,3 @@
-:root {
-  --navbar-bg: #ffffff;
-  --navbar-color: #000000;
-  --navbar-link-hover: #007bff;
-
-  --background-color: #f4f4f4; /* Page background for light mode */
-  --text-color: #000000;
-}
-
-.dark-mode {
-  --navbar-bg: #333333; /* Dark navbar */
-  --navbar-color: #ffffff;
-  --navbar-link-hover: #f4d03f;
-
-  --background-color: #121212; /* Page background for dark mode */
-  --text-color: #ffffff;
-}
-
-
 @font-face {
   font-family:KG Happy;
   src: url('./Fonts/KGHAPPY.ttf') ,
@@ -31,18 +12,15 @@
   max-height: 100vh;
   text-align: center;
   height: 100vh;
-  color: white;
+  color: white; /*need change*/
   overflow-x: hidden;
 }
 body{
-  --nav-color:#0b121f;
-  --theme-color-dark:#141d2b;
-  --theme-color-light: #ffffff;
-  --money-color:#9fef00;
-  /* --money-color:#c7ef00; */
-  background-color: var(--theme-color-dark);
-  --color-background: #fafafa;
-  --color-foreground: #1f2023;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: var(--font-body);
+  overflow-x: hidden;
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -51,23 +29,82 @@ body{
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: var(--color-background);
   color: var(--color-foreground);
+} */
+
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-color);
+  padding: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.navbar a {
+  color: var(--navbar-color);
+  text-decoration: none;
+  margin: 0 var(--spacing-sm);
+  font-size: var(--font-size-md);
+}
+
+.navbar a:hover {
+  color: var(--navbar-link-hover);
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--font-size-md);
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transition: 0.3s ease;
+}
+
+/* Heading */
+.heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+/* Animations */
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: var(--spacing-md);
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: var(--hover-shadow);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/* Cards */
+.card {
+  background-color: var(--theme-color-light);
+  color: var(--text-color);
+  padding: var(--spacing-md);
+  margin: var(--spacing-lg);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
 }
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
 
 @keyframes nav-open {
   from {
@@ -102,18 +139,22 @@ body{
     transform: rotate(0deg);
   }
 }
-@keyframes fade-in{
-  from{
+
+/* Animation: Fade-In */
+@keyframes fade-in {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
-.fade-in{
-  animation: fade-in 1s ;
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
 }
 
+/* Animation: Logo Spin */
 .appear-triangle{
   animation: appear-triangle 1s ease-in 1 ;
 
@@ -124,12 +165,13 @@ body{
   }
 }
 
-.heading {
+
+/* .heading {
   font-family: kghappy;
   font-size: 60px;
   font-weight: bolder;
-  /* color: var(--money-color); */
-}
+} */
+
 .KG-Happy{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
