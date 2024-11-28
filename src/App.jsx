@@ -1,6 +1,6 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './css/theme.css'
+// import './css/theme.css'
 
 import '../src/css/App.css';
 import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';

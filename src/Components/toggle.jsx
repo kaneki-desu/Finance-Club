@@ -3,25 +3,21 @@ import Toggle from "react-toggle";
 import "react-toggle/style.css";
 
 export const DarkModeToggle = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    return localStorage.getItem("isDark") === "true";
+  });
 
   useEffect(() => {
-    if (isDark) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
+    document.documentElement.classList.toggle("dark-mode", isDark);
+    localStorage.setItem("isDark", "true");
   }, [isDark]);
 
   return (
     <Toggle
       checked={isDark}
       onChange={({ target }) => setIsDark(target.checked)}
-      icons={{
-        checked: "🌙",
-        unchecked: "🔆",
-      }}
-      aria-label="Dark mode toggle"
     />
   );
 };
+
+// export default DarkModeToggle;

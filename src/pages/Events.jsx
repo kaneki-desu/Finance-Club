@@ -1,20 +1,11 @@
 import React from 'react'
-
-// import "../css/normalize.css"
-// import "../css/main.css"
 import "../css/events.css"
 import { defer, Link } from 'react-router-dom'
 import { useRef } from 'react';
 import _4Dots from "../images/4-dots.jpg"
+import {DarkModeToggle} from '../Components/toggle';
 
 function Events() {
-
-   
-
-        
-
-    
-
     return (
         <div>
             <section className="events-intro">

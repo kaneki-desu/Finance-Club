@@ -1,13 +1,40 @@
+:root {
+    --event-primary-color: gold;
+    --event-secondary-color: gold;
+    --event-background-color: grey;
+    --event-text-baseColor: grey;
+    --event-text: gold;
+    --event-bg: white;
+    --event-bg2: rgb(92, 92, 92);
+    --event-bg22: rgb(211, 211, 211);
+    --event-bg3: black;
+    --event-text1: black;
+
+    --event-bg-w1:rgb(154, 154, 154);
+    --event-bg-w2: rgb(198, 198, 198);
+}
+
+:root.dark-mode {
+    --event-secondary-color: orange;
+    --event-bg: black;
+    --event-bg2: rgb(151, 151, 151);
+    --event-bg22: rgb(55, 55, 55);
+    --event-bg3: white;
+    --event-text1: white;
+    --event-bg-w1:rgb(23, 23, 23);
+    --event-bg-w2: rgb(64, 64, 64);
+}
+
 body {
-    background: #000000;
-    color: #ffffff;
+    background: var(--event-bg3);
+    color: var(--event-bg);
     font-family: "Lato", sans-serif;
 }
 
 
 
 .events-intro {
-    background-color: #242424;
+    background-color: var(--event-bg);
     text-align: center;
     padding: 40px 0;
 }
@@ -15,12 +42,13 @@ body {
 .events-intro h1 {
     font-family: Arial, sans-serif;
     font-size: 1.5rem;
+    color: var(--event-text1);
 }
 
 .events-intro p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
-    color: #5a5a5a;
+    color: var(--event-text-baseColor);
 }
 
 .row {
@@ -31,7 +59,6 @@ body {
 
 .col-md-4 {
     max-width: 400px;
-    /* background-color: #232323; */
     padding: 10px;
     margin: auto;
 }
@@ -44,7 +71,7 @@ body {
 /*Fests*/
 
 .fests-intro {
-    background-color: #000000; 
+    background-color: var(--event-bg-w1); 
     text-align: center;
     padding: 50px 0;
 }
@@ -52,7 +79,7 @@ body {
 .fests-intro h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #d4af37; 
+    color: var(--event-secondary-color); 
     font-weight: 700;
     margin-bottom: 20px; 
 }
@@ -60,12 +87,12 @@ body {
 .fests-intro p {
     font-family: Arial, sans-serif;
     font-size: 1.25rem; 
-    color: #666; 
+    color: var(--event-bg2); 
 }
 
 .fest-item {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: var(--event-bg2); 
     border-radius: 8px;
     margin-bottom: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -75,13 +102,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem; 
     font-weight: 600;
-    color: #333; 
+    color: var(--event-bg); 
 }
 
 .fest-item p {
     font-family: Arial, sans-serif;
     font-size: 1rem; 
-    color: #555; 
+    color: var(--event-bg22); 
 }
 
 
@@ -90,7 +117,7 @@ body {
 /*Conferences*/
 
 .conferences-intro {
-    background-color: #292929; 
+    background-color: var(--event-bg-w2); 
     text-align: center;
     padding: 50px 0;
 }
@@ -98,7 +125,7 @@ body {
 .conferences-intro h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #d4af37; 
+    color: var(--event-secondary-color); 
     font-weight: 700;
     margin-bottom: 20px; 
 }
@@ -106,12 +133,12 @@ body {
 .conferences-intro p {
     font-family: Arial, sans-serif;
     font-size: 1.25rem; 
-    color: #666; 
+    color: var(--event-bg2); 
 }
 
 .conference-item {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: var(--event-bg2); 
     border-radius: 8px;
     margin-bottom: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -121,13 +148,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem; 
     font-weight: 600;
-    color: #333; 
+    color: var(--event-bg); 
 }
 
 .conference-item p {
     font-family: Arial, sans-serif;
     font-size: 1rem; 
-    color: #555; 
+    color: var(--event-bg22); 
 }
 
 
@@ -137,7 +164,7 @@ body {
 /* competitions  */
 
 .competitions-intro {
-    background-color: #000000; 
+    background-color: var(--event-bg-w1); 
     text-align: center;
     padding: 50px 0;
 }
@@ -145,7 +172,7 @@ body {
 .competitions-intro h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #d4af37; 
+    color: var(--event-secondary-color); 
     font-weight: 700;
     margin-bottom: 20px; 
 }
@@ -153,12 +180,12 @@ body {
 .competitions-intro p {
     font-family: Arial, sans-serif;
     font-size: 1.25rem; 
-    color: #666; 
+    color: var(--event-bg2); 
 }
 
 .competition-item {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: var(--event-bg2); 
     border-radius: 8px;
     margin-bottom: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -168,13 +195,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem; 
     font-weight: 600;
-    color: #333; 
+    color: var(--event-bg); 
 }
 
 .competition-item p {
     font-family: Arial, sans-serif;
     font-size: 1rem; 
-    color: #555; 
+    color: var(--event-bg22); 
 }
 
 
@@ -182,7 +209,7 @@ body {
 /*    Crypto  */
 
 .crypto-intro {
-    background-color: #222222; 
+    background-color: var(--event-bg-w2); 
     text-align: center;
     padding: 50px 0;
 }
@@ -190,7 +217,7 @@ body {
 .crypto-intro h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #d4af37; 
+    color: var(--event-secondary-color); 
     font-weight: 700;
     margin-bottom: 20px; 
 }
@@ -198,12 +225,12 @@ body {
 .crypto-intro p {
     font-family: Arial, sans-serif;
     font-size: 1.25rem; 
-    color: #666; 
+    color: var(--event-bg2); 
 }
 
 .crypto-item {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: var(--event-bg2); 
     border-radius: 8px;
     margin-bottom: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -213,20 +240,20 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem; 
     font-weight: 600;
-    color: #333; 
+    color: var(--event-bg); 
 }
 
 .crypto-item p {
     font-family: Arial, sans-serif;
     font-size: 1rem; 
-    color: #555; 
+    color: var(--event-bg22); 
 }
 
 
 /*Internship */
 
 .intern-intro {
-    background-color: #000000; 
+    background-color: var(--event-bg-w1); 
     text-align: center;
     padding: 50px 0;
 }
@@ -234,7 +261,7 @@ body {
 .intern-intro h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #d4af37; 
+    color: var(--event-secondary-color); 
     font-weight: 700;
     margin-bottom: 20px; 
 }
@@ -242,12 +269,12 @@ body {
 .intern-intro p {
     font-family: Arial, sans-serif;
     font-size: 1.25rem; 
-    color: #666; 
+    color: var(--event-bg2); 
 }
 
 .intern-item {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: var(--event-bg2); 
     border-radius: 8px;
     margin-bottom: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -257,13 +284,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem; 
     font-weight: 600;
-    color: #333; 
+    color: var(--event-bg); 
 }
 
 .intern-item p {
     font-family: Arial, sans-serif;
     font-size: 1rem; 
-    color: #555; 
+    color: var(--event-bg22); 
 }
 
 
@@ -272,7 +299,7 @@ body {
 /*Bootcamps and workshops*/
 
 .bootcamp-intro {
-    background-color: #4f4f4f; 
+    background-color: var(--event-bg-w2); 
     text-align: center;
     padding: 50px 0;
 }
@@ -280,7 +307,7 @@ body {
 .bootcamp-intro h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #d4af37; 
+    color: var(--event-secondary-color); 
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -288,13 +315,13 @@ body {
 .bootcamp-intro p {
     font-family: Arial, sans-serif;
     font-size: 1.25rem;
-    color: #666;
+    color: var(--event-bg2);
     margin-bottom: 40px;
 }
 
 .bootcamp-item {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: var(--event-bg2); 
     border-radius: 8px;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -304,13 +331,13 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
-    color: #333;
+    color: var(--event-bg);
 }
 
 .bootcamp-item p {
     font-family: Arial, sans-serif;
     font-size: 1rem;
-    color: #555;
+    color: var(--event-bg22);
 }
 
 
@@ -318,7 +345,7 @@ body {
 /*Sessions*/
 
 .sessions-intro {
-    background-color: #070707; 
+    background-color: var(--event-bg-w1); 
     text-align: center;
     padding: 50px 0;
 }
@@ -326,14 +353,14 @@ body {
 .sessions-intro h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #d4af37; 
+    color: var(--event-secondary-color); 
     font-weight: 700;
     margin-bottom: 30px; 
 }
 
 .session-item {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: var(--event-bg2); 
     border-radius: 8px;
     margin-bottom: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -343,11 +370,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem; 
     font-weight: 600;
-    color: #333; 
+    color: var(--event-bg); 
 }
 
 .session-item p {
     font-family: Arial, sans-serif;
     font-size: 1rem; 
-    color: #555; 
+    color: var(--event-bg22); 
 }

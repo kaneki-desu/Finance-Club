@@ -1,12 +1,20 @@
+:root {
+  --nav-link-hover: rgb(42, 125, 227);
+  --nav-bg1: rgb(187, 187, 187);
+  --nav-bg2: grey;
+  --nav-bg3:rgb(38, 38, 38);
+  --nav-text1:white;
+  --nav-text2: gold;
+  --nav-text3: black;
+}
 
-
-.dark-mode {
-  --navbar-bg: #333333; /* Dark navbar */
-  --navbar-color: #ffffff;
-  --navbar-link-hover: #f4d03f;
-
-  --background-color: #121212; /* Page background for dark mode */
-  --text-color: #ffffff;
+:root.dark-mode {
+  --nav-bg1: rgb(38, 38, 38);
+  --nav-bg2: grey;
+  --nav-bg3: rgb(224, 224, 224);
+  --nav-text1: black;
+  --nav-text2: gold;
+  --nav-text3: white;
 }
 
 
@@ -16,48 +24,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: var(--navbar-bg, #ffffff); /* Default to light */
-  color: var(--navbar-color, #000000); /* Default to black */
-  transition: background-color 0.3s, color 0.3s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.shrink {
-  padding: 10px 20px;
+  background-color: var(--nav-bg1);
+  color: var(--nav-text3);
 }
 
 .navbar a {
-  text-decoration: none;
-  color: inherit;
   margin: 0 10px;
   font-size: 1rem;
-  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: var(--navbar-link-hover, #007bff); /* Highlight on hover */
+  color: var(--nav-link-hover); /* Highlight on hover */
 }
 
+.navbar h3 {
+  font-family: 'Fredoka One', sans-serif;
+}
 
-  .navbar h3 {
-    color: #eaeaea;
-    font-family: 'Fredoka One', sans-serif;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Play', sans-serif;
-  }
-  
-  .nav-links a:hover {
-    color: #00b4d8;
-  }
-  
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
 
-  
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Play', sans-serif;
+}
+/* 
+.nav-links a:hover {
+  color: var(--nav-link-hover);
+} */
+
+

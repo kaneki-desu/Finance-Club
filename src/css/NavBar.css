@@ -8,7 +8,8 @@
   }
   
   .navbar h3 {
-    color: #fff;
+    /* color: var(--font-color-dark); */
+    color: red;
     font-family: 'Fredoka One', sans-serif;
   }
   

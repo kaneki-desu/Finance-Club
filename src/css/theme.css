@@ -11,10 +11,14 @@
   
     /* Colors */
     --primary-color: #0b121f;
-    --theme-color-dark: #141d2b;
+    --theme-color-dark: #0053da;
     --theme-color-light: #ffffff;
     --accent-color: #ffffff; /* Green Accent */
     --secondary-color: #ffffff;
+
+    /*Font color*/
+    --font-color-light: #000000;
+    --font-color-dark: #ffffff;
   
     /* Fonts */
     --font-heading: "KG Happy", Georgia, "Times New Roman", Times, serif;
@@ -41,7 +45,7 @@
   /* ================== Dark Theme Variables ================== */
   body.dark-mode {
     --navbar-bg: #333333;
-    --navbar-color: #ffffff;
+    --navbar-color: #5f5f5f;
     --navbar-link-hover: #f4d03f;
   
     --background-color: #121212; /* Page background for dark mode */
