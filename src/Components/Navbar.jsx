@@ -26,6 +26,7 @@ function Navbar() {
         <Link to="/events" className='NavUnderline'>Events</Link>
         <Link to="/sponser" className='NavUnderline'>Sponser</Link>
         <Link to="/blog" className='NavUnderline'>Blog</Link>
+        <Link to="/team" className='NavUnderline'>Team</Link>
         <ThemeBtn />
         </ul>
     </div>
