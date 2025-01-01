@@ -1,0 +1,161 @@
+/* Ensure the navbar stays fixed on top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar is above content */
+  background-color: #fff; /* Optional: You can set a background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow to navbar */
+}
+
+/* Main Content Area */
+.team-page {
+  padding-top: 120px; /* Ensure content starts below the fixed navbar (adjust as needed) */
+  position: relative; /* So other elements can stack correctly */
+}
+
+/* Profile Card */
+.profile-card {
+  position: relative;
+  font-family: sans-serif;
+  width: 260px;
+  height: 260px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 18px #3336;
+  transition: 0.6s;
+  margin: 0 25px;
+  margin-bottom: 30px; /* Added margin-bottom to create space between profile and the toggle */
+  z-index: 500; /* Profile cards should be below the navbar */
+}
+
+.profile-card:hover {
+  border-radius: 10px;
+  height: 350px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-card .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 99;
+}
+
+.profile-card:hover .img {
+  transform: translateY(-50px);
+}
+
+.img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #3336;
+  transition: 0.6s;
+  object-fit: cover;
+}
+
+/* Default Border (White Border for Dark Theme) */
+.profile-card .img img {
+  border: 4px solid white; /* Default border for dark theme (white border) */
+}
+
+/* Light Theme Border for Image (Black Border) */
+.theme-light .profile-card .img img {
+  border: 4px solid black; /* Black border for light theme */
+}
+
+/* Caption */
+.caption {
+  text-align: center;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.profile-card:hover .caption {
+  opacity: 1;
+}
+
+.caption h3 {
+  font-size: 24px;
+  color: #000000;
+  font-family: sans-serif;
+}
+
+.caption p {
+  font-size: 15px;
+  color: #000000;
+  font-family: sans-serif;
+  margin: 2px 0 9px 0;
+}
+
+.profile-card:hover .caption {
+  transform: translateY(-130px);
+}
+
+/* Role Toggle Button Container */
+.role-toggle-container {
+  margin-top: 30px; /* Creates distance from the profile picture */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Toggle Button Styling */
+.role-toggle {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-toggle:hover {
+  background-color: #e5e7eb;
+}
+
+.role-toggle input {
+  display: none;
+}
+
+.role-toggle label {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.role-toggle input:checked + label {
+  background-color: #0c52a1;
+  color: #fff;
+}
+
+.role-toggle label:hover {
+  background-color: #0c52a1;
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+  }
+  .img img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Adjusting the spacing for smaller screens */
+  .role-toggle-container {
+    margin-top: 20px;
+  }
+}
