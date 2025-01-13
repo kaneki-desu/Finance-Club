@@ -1,24 +1,9 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import blogData from '../assets/blog.json'; // Import the JSON file
 
 const Blog = () => {
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null); // For error handling
+  const [data, setData] = useState(blogData); // Use blogData directly
   const [expandedPostId, setExpandedPostId] = useState(null); // To track which post is expanded
-
-  const getData = async () => {
-    try {
-      const response = await axios.get('http://localhost:3000/blog');
-      setData(response.data);
-    } catch (err) {
-      console.log(err);
-      setError('Failed to fetch data'); // Set error state
-    }
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
 
   // Function to handle the Read More/Show Less toggle
   const handleReadMoreClick = (id) => {
@@ -26,20 +11,17 @@ const Blog = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 md:p-6 lg:p-8">
+    <div className="container mt-[100px] mx-auto p-4 md:p-6 lg:p-8 bg-gray-900 min-h-screen">
       <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8 lg:mb-12">
         Blogs
       </h1>
-
-      {/* Show error if any */}
-      {error && <p className="text-center text-red-500">{error}</p>}
 
       <div className="space-y-8">
         {data.length > 0 ? (
           data.map((blog) => (
             <div
               key={blog._id}
-              className="bg-slate-950 shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-xl transition-shadow duration-300"
+              className="bg-gray-800 shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-xl transition-shadow duration-300"
             >
               {/* Left: Blog Image */}
               <div className="w-full md:w-1/3 mb-4 md:mb-0">
@@ -60,12 +42,12 @@ const Blog = () => {
                     ? blog.body
                     : `${blog.body.substring(0, 150)}...`}
                 </p>
-                
+
                 <button
                   onClick={() => handleReadMoreClick(blog._id)}
                   className="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-200"
                 >
-                  {expandedPostId === blog._id ? "Show Less" : "Read More"}
+                  {expandedPostId === blog._id ? 'Show Less' : 'Read More'}
                 </button>
               </div>
             </div>
