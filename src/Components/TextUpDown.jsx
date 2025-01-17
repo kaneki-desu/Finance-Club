@@ -2,7 +2,7 @@ import React from 'react'
 import { BadgeIndianRupee } from 'lucide-react';
 const TextUpDown = () => {
   return (
-    <div className=''>
+    <div className='relative h-screen w-screen flex-col flex ' style={{paddingLeft:"12vw", paddingTop:"15vw"}}>
         <ul className='inner-heading -z-1'>
             <div >
             Create<br/>
