@@ -1,5 +1,5 @@
 import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../css/Card.css'; // Ensure you have this CSS file for custom styles if necessary
 
 const TeamCard = ({ name, position, url, facebook, instagram, linkedin, github }) => {
