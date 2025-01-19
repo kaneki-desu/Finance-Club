@@ -20,7 +20,7 @@ const Home = () => {
           {/* <div className='h-screen w-full absolute top-0 left-0 -z-1' style={{backgroundImage: "linear-gradient(black,transparent,transparent ,black)"}}></div> */}
           <TextUpDown />
       {/* </div> */}
-      <div className='h-full p-5'>
+      <div className='relative'>
         <AbtCard/>
       </div>
     </>

@@ -17,8 +17,6 @@
 :root{
     background: var(--background);
     color: var(--text-primary);
-    display: flex;
-    flex-direction: column;
 }
 .dark{
     --background: #000;
@@ -33,10 +31,10 @@
 body{
     background: var(--background);
     font-family: 'Archivo';
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 }
 body *{
     color: var(--text-primary);   
@@ -111,4 +109,24 @@ body *{
 .hero{
     background-image: url("./images//light-bg.png"); /* fallback */
     background-image: linear-gradient(transparent, #000000); 
+}
+@media (min-width:0px) and (max-width:500px) {
+    .pc{
+        position: absolute;
+        visibility: hidden;
+    }
+    .mbl{
+        position: relative;
+        visibility: visible;
+    }
+}
+@media (min-width:500px)  {
+    .mbl{
+        position: absolute;
+        visibility: hidden;
+    }
+    .pc{
+        position: relative;
+        visibility: visible;
+    }
 }

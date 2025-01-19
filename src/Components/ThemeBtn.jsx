@@ -3,7 +3,8 @@ import { Sun, Moon} from "lucide-react";
 import useTheme from '../contexts/theme';
 import { motion, AnimatePresence } from "framer-motion"
 
-const ThemeBtn = () => {
+const ThemeBtn = ({size}) => {
+  console.log(size)
     const {themeMode, lightTheme, darkTheme}= useTheme()
     const onClickThemeButton=(e)=>{
      themeMode==='light'?darkTheme():lightTheme() 
@@ -19,7 +20,7 @@ const ThemeBtn = () => {
       transition={{duration:0.5}}
       exit={{ opacity: 0 }}
       >
-        <Sun/>
+        <Sun size={size} />
       </motion.div>
       </AnimatePresence>
       :<motion.div
@@ -28,7 +29,7 @@ const ThemeBtn = () => {
       transition={{duration:0.5}}
       exit={{ opacity: 0 }}
       >
-        <Moon/>
+        <Moon size={size}/>
       </motion.div>}
       </AnimatePresence>
     </div>

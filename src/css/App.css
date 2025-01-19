@@ -10,7 +10,7 @@
 #root {
   text-align: center;
   color: white;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 body{
   --nav-color:#0b121f;
