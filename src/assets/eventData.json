@@ -1,0 +1,29 @@
+{
+    "events": [
+      {
+        "category": "Festivals",
+        "items": [
+          { "name": "Festival 1", "description": "Description for Festival 1", "image": "https://i.imghippo.com/files/sPa3039ls.jpeg" },
+          { "name": "Festival 2", "description": "Description for Festival 2" },
+          { "name": "Festival 3", "description": "Description for Festival 3" }
+        ]
+      },
+      {
+        "category": "Conferences",
+        "items": [
+          { "name": "Conference 1", "description": "Description for Conference 1" },
+          { "name": "Conference 2", "description": "Description for Conference 2" },
+          { "name": "Conference 3", "description": "Description for Conference 3" }
+        ]
+      },
+      {
+        "category": "Competitions",
+        "items": [
+          { "name": "Competition 1", "description": "Description for Competition 1" },
+          { "name": "Competition 2", "description": "Description for Competition 2" },
+          { "name": "Competition 3", "description": "Description for Competition 3" }
+        ]
+      }
+    ]
+  }
+  
