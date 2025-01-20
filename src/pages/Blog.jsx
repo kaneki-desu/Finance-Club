@@ -1,30 +1,28 @@
 import React, { useState } from 'react';
 import blogData from '../assets/blog.json';
 import useTheme from '../contexts/theme';
-import ParticlesComponent from '../Components/Particle'; 
+import ParticlesComponent from '../Components/Particle';
 
 const Blog = () => {
   const { themeMode } = useTheme(); 
   const [data, setData] = useState(blogData); 
   const [expandedPostId, setExpandedPostId] = useState(null); 
+
   const handleReadMoreClick = (id) => {
-    setExpandedPostId((prevId) => (prevId === id ? null : id)); 
+    setExpandedPostId((prevId) => (prevId === id ? null : id));
   };
 
   return (
     <div
-      className={`relative px-6 pt-11 pb-20 lg:px-8 lg:pt-11 lg:pb-28 ${
-        themeMode === 'light' ? 'bg-white text-gray-900' : 'bg-black text-gray-100'
+      className={`relative ${
+        themeMode === 'light' ? 'bg-gray-50 text-gray-900' : 'bg-black text-gray-100'
       }`}
     >
-      <div className="absolute inset-0 z-10">
-      <ParticlesComponent
-        id="blog-particles"
-      />
+      <div className="fixed inset-0 z-0">
+        <ParticlesComponent id="blog-particles" />
       </div>
-      
 
-      <div className="relative mx-auto max-w-7xl z-10">
+      <div className="relative px-6 pt-11 pb-20 lg:px-8 lg:pt-11 lg:pb-28 mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Blogs</h2>
         </div>
