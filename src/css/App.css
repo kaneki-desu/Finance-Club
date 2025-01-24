@@ -12,25 +12,6 @@
   color: white;
   overflow-x: clip;
 }
-body{
-  --nav-color:#0b121f;
-  --theme-color:#141d2b;
-  --money-color:#9fef00;
-  /* --money-color:#c7ef00; */
-  background-color: var(--theme-color);
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
 @keyframes nav-open {
   from {
@@ -94,7 +75,7 @@ body{
   /* color: var(--money-color); */
 }
 #particle{
-  z-index: 0;
+  /* z-index: -1; */
   overflow: hidden;
   position: absolute;
 }
