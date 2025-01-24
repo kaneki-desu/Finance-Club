@@ -1,21 +1,44 @@
 [
-    {
-      "_id": "1",
-      "title": "The Future of Web Development",
-      "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
-      "image": "https://via.placeholder.com/400x300?text=Web+Development"
-    },
-    {
-      "_id": "2",
-      "title": "Understanding React Hooks",
-      "body": "React Hooks have revolutionized the way we write functional components in React. With Hooks like useState and useEffect, developers can manage state and lifecycle events without needing class components. This simplifies code and makes components more reusable.",
-      "image": "https://via.placeholder.com/400x300?text=React+Hooks"
-    },
-    {
-      "_id": "3",
-      "title": "Why Learn TypeScript?",
-      "body": "TypeScript has gained significant traction among developers for its ability to catch errors at compile time. By adding types to JavaScript, it enhances code quality and makes large-scale applications easier to maintain. Whether you’re building a frontend or backend application, TypeScript is worth learning.",
-      "image": "https://via.placeholder.com/400x300?text=TypeScript"
-    }
-  ]
+  {
+    "_id": "1",
+    "title": "The Future of Web Development",
+    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
+    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "category": "Web",
+    "author": "Tahmid",
+    "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "date":"--/--/2025"
+  },
+  {
+    "_id": "2",
+    "title": "The Future of Web Development",
+    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
+    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "category": "Web",
+    "author": "Tahmid",
+    "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "date":"--/--/2025"
+  },
+  {
+    "_id": "3",
+    "title": "The Future of Web Development",
+    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
+    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "category": "Web",
+    "author": "Tahmid",
+    "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "date":"--/--/2025"
+  },
+  {
+    "_id": "4",
+    "title": "The Future of Web Development",
+    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
+    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "category": "Web",
+    "author": "Tahmid",
+    "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
+    "date":"--/--/2025"
+  }
+
+]
   

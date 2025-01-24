@@ -1,60 +1,106 @@
 import React, { useState } from 'react';
-import blogData from '../assets/blog.json'; // Import the JSON file
+import blogData from '../assets/blog.json';
+import useTheme from '../contexts/theme';
+import ParticlesComponent from '../Components/Particle';
 
 const Blog = () => {
-  const [data, setData] = useState(blogData); // Use blogData directly
-  const [expandedPostId, setExpandedPostId] = useState(null); // To track which post is expanded
+  const { themeMode } = useTheme(); 
+  const [data, setData] = useState(blogData); 
+  const [expandedPostId, setExpandedPostId] = useState(null); 
 
-  // Function to handle the Read More/Show Less toggle
   const handleReadMoreClick = (id) => {
-    setExpandedPostId(expandedPostId === id ? null : id); // Toggle between expanded and collapsed state
+    setExpandedPostId((prevId) => (prevId === id ? null : id));
   };
 
   return (
-    <div className="container mt-[100px] mx-auto p-4 md:p-6 lg:p-8 bg-gray-900 min-h-screen">
-      <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8 lg:mb-12">
-        Blogs
-      </h1>
+    <div
+      className={`relative ${
+        themeMode === 'light' ? 'bg-gray-50 text-gray-900' : 'bg-black text-gray-100'
+      }`}
+    >
+      <div className="fixed inset-0 z-0">
+        <ParticlesComponent id="blog-particles" />
+      </div>
 
-      <div className="space-y-8">
-        {data.length > 0 ? (
-          data.map((blog) => (
-            <div
-              key={blog._id}
-              className="bg-gray-800 shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center hover:shadow-xl transition-shadow duration-300"
-            >
-              {/* Left: Blog Image */}
-              <div className="w-full md:w-1/3 mb-4 md:mb-0">
-                <img
-                  src={blog.image}
-                  alt={blog.title}
-                  className="w-full h-56 object-cover rounded-lg"
-                />
+      <div className="relative px-6 pt-11 pb-20 lg:px-8 lg:pt-11 lg:pb-28 mx-auto max-w-7xl">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Blogs</h2>
+        </div>
+        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+          {data.length > 0 ? (
+            data.map((blog) => (
+              <div
+                key={blog._id}
+                className={`flex flex-col overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ${
+                  themeMode === 'light' ? 'bg-white hover:shadow-2xl' : 'bg-black hover:shadow-gray-700'
+                }`}
+              >
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-48 w-full object-cover"
+                    src={blog.image}
+                    alt={blog.title}
+                  />
+                </div>
+                <div className="flex flex-1 flex-col justify-between p-6">
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-indigo-600">
+                      <a href="#" className="hover:underline">
+                        {blog.category}
+                      </a>
+                    </p>
+                    <a href="#" className="mt-2 block">
+                      <p className="text-xl font-semibold hover:text-indigo-600 transition-colors duration-200">
+                        {blog.title}
+                      </p>
+                      <p
+                        className={`mt-3 text-base transition-max-height duration-500 ease-in-out overflow-hidden ${
+                          expandedPostId === blog._id ? 'max-h-screen' : 'max-h-24'
+                        }`}
+                      >
+                        {blog.body}
+                      </p>
+                    </a>
+                  </div>
+                  <div className="mt-6 flex items-center">
+                    <div className="flex-shrink-0">
+                      <a href="#">
+                        <span className="sr-only">{blog.author}</span>
+                        <img
+                          className="h-10 w-10 rounded-full"
+                          src={blog.authorImage}
+                          alt={blog.author}
+                        />
+                      </a>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium">
+                        <a href="#" className="hover:underline">
+                          {blog.author}
+                        </a>
+                      </p>
+                      <div className="flex space-x-1 text-sm">
+                        <time dateTime={blog.date}>{blog.date}</time>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => handleReadMoreClick(blog._id)}
+                    className={`mt-4 py-2 px-4 rounded hover:ring-4 transition duration-200 ${
+                      themeMode === 'light'
+                        ? 'bg-black text-white hover:bg-black ring-black'
+                        : 'bg-white text-gray-900 hover:bg-white ring-white'
+                    }`}
+                  >
+                    {expandedPostId === blog._id ? 'Show Less' : 'Read More'}
+                  </button>
+                </div>
               </div>
-
-              {/* Right: Blog Title and Body */}
-              <div className="w-full md:w-2/3 md:pl-6">
-                <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-2 text-white">
-                  {blog.title}
-                </h2>
-                <p className="text-gray-300 text-sm md:text-base lg:text-lg mb-4">
-                  {expandedPostId === blog._id
-                    ? blog.body
-                    : `${blog.body.substring(0, 150)}...`}
-                </p>
-
-                <button
-                  onClick={() => handleReadMoreClick(blog._id)}
-                  className="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-200"
-                >
-                  {expandedPostId === blog._id ? 'Show Less' : 'Read More'}
-                </button>
-              </div>
-            </div>
-          ))
-        ) : (
-          <p className="text-center text-gray-500">No blogs available.</p>
-        )}
+            ))
+          ) : (
+            <p className="text-center text-gray-500">No blogs available.</p>
+          )}
+        </div>
       </div>
     </div>
   );
