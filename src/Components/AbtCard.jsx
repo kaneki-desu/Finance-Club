@@ -70,7 +70,7 @@ const AbtCard = () => {
              viewport={{
                once:true,
              }}
-            custom={40}
+            custom={20}
 
              className="button-54 w-48" role="button">Know More
             </motion.button>
@@ -107,8 +107,8 @@ const AbtCard = () => {
 <stop offset="1"/>
 </>):(<>
   <stop stop-color="#000"/>
-<stop offset="0.57" stop-color="#808080"/>
-<stop offset="0.571" stop-color="#BFBFBF"/>
+{/* <stop offset="0.57" stop-color="#808080"/>
+<stop offset="0.73" stop-color="#BFBFBF"/> */}
 <stop offset="1" stop-color="#f4f3f3"/>
 </>)}
 </linearGradient>

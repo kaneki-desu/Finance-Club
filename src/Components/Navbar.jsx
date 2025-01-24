@@ -16,8 +16,11 @@ function Navbar() {
     <div id='navbar' className="z-40 sticky top-0 mt-6 flex flex-col justify-center  w-screen">
 
     <div className={` top-0 shadowNav -mt-4  w-4/5 flex items-center gap-10 justify-between px-5 py-3  m-auto  rounded-3xl z-30 bg-opacity-5  ${themeMode==='dark' ? 'bg-black bg-opacity-80' : 'bg-white bg-opacity-80'} `} style={{}}>
-        <section className='nav-left flex justify-center items-center gap-4'>
-        <img src={LogoImg} alt="Logo" className='size-16' />
+        <section className='nav-left flex justify-center items-center gap-1'>
+          <div className="size-16 flex items-center">
+
+        <img src={LogoImg} alt="Logo" className='' />
+          </div>
         <div className='flex flex-col justify-start text-left text-sm'><p className='inline '>FINANCE & INVESTMENT CLUB </p>
               <p>NIT SILCHAR</p>
         </div>
