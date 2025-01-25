@@ -75,37 +75,6 @@ body *{
 .NavUnderline:hover::after{
     animation: expand-underline 0.5s ease-out alternate both;
 }
-@keyframes Text-Change {
-    0%{transform:translateY(0);}
-    100%{transform:translateY(0);}
-    28%{transform:translateY(0);}
-    33%{transform:translateY(-112px);}
-    62%{color:var(--text-primary);transform:translateY(-112px);}
-    67%{transform:translateY(calc(112px * -2) );}
-    95%{transform:translateY(calc(112px * -2) );}
-    /* 70%{transform:translateY(-100px);}
-    75%{transform:translateY(-150px);}
-    95%{transform:translateY(-150px);} */
-}
-.inner-heading{
-    --text-size:112px;
-     width: 500px;
-    height: 120px;
-    
-    font-size: 112px;
-    text-transform: uppercase;
-    line-height: 1;
-    overflow: hidden;
-}
-.inner-heading div{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: left;
-    text-align: left;
-    color: var(--text-primary);
-    animation: Text-Change 5s ease infinite ;
-}
 .hero{
     background-image: url("./images//light-bg.png"); /* fallback */
     background-image: linear-gradient(transparent, #000000); 
