@@ -5,6 +5,7 @@ import BlackBg from '../images/black-bg.jpeg'
 import LightBg from '../images/light-bg.png'
 import { ThemeContext } from '../contexts/theme';
 import ParticleBackground from '../Components/Particle';
+import Timeline from '../Components/Timeline';
 const Home = () => {
   const [bgImg,setBgImg]= useState(BlackBg)
   const {themeMode}=useContext(ThemeContext)
@@ -20,8 +21,9 @@ const Home = () => {
           {/* <div className='h-screen w-full absolute top-0 left-0 -z-1' style={{backgroundImage: "linear-gradient(black,transparent,transparent ,black)"}}></div> */}
           <TextUpDown />
       {/* </div> */}
-      <div className='relative '>
+      <div className='relative h-full w-full bg-opacity-80'>
         <AbtCard/>
+        <Timeline/>
       </div>
     </>
   )

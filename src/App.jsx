@@ -8,7 +8,6 @@ import '../src/css/App.css';
 // Components
 import Navbar from './Components/Navbar';
 import Home from './pages/Home';
-import About from './pages/About';
 import Sponsor from './pages/Sponser'; // Fixed filename
 import Events from './pages/Events';
 import Team from './pages/Team';
@@ -36,7 +35,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/sponsor" element={<Sponsor />} />
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />

@@ -4,7 +4,6 @@ import useTheme from '../contexts/theme';
 import { motion, AnimatePresence } from "framer-motion"
 
 const ThemeBtn = ({size}) => {
-  console.log(size)
     const {themeMode, lightTheme, darkTheme}= useTheme()
     const onClickThemeButton=(e)=>{
      themeMode==='light'?darkTheme():lightTheme() 
