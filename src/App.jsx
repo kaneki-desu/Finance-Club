@@ -8,7 +8,7 @@ import '../src/css/App.css';
 // Components
 import Navbar from './Components/Navbar';
 import Home from './pages/Home';
-import Sponsor from './pages/Sponser'; // Fixed filename
+import Sponser from './pages/Sponser'; 
 import Events from './pages/Events';
 import Team from './pages/Team';
 
@@ -35,7 +35,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/sponsor" element={<Sponsor />} />
+          {/* <Route path="/sponser" element={<Sponser />} /> */}
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           <Route path="/blog" element={<Blog />} />
