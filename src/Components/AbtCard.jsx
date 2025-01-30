@@ -80,7 +80,7 @@ const AbtCard = () => {
               </div>
 
         </motion.div>
-        <div className="threeImgSet p-10 pt-0 flex flex-col gap-10">
+        <div className="threeImgSet p-10 pt-0 flex flex-col gap-10 mobile:gap-20 mobile:pb-28">
 
         <motion.div
         variants={fadeINAnimationVariants}
