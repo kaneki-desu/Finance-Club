@@ -39,12 +39,13 @@ export default function SponsorsMarquee() {
           <img src="https://i.postimg.cc/X7bV6fzb/Fin-farewell.jpg"/>
         </div>
       </motion.div> */}
-      <div className="flex flex-wrap justify-center items-center m-auto gap-10 p-4 w-4/5">
+      <div className="mobile:absolute mobile:hidden flex flex-wrap justify-center items-center m-auto gap-10 p-4 w-4/5">
       {sponsors.map((src, index) => (
-        <img key={index} src={src} alt="Sponsor" className="h-32 w-auto" />
+        <img key={index} src={src} alt="Sponsor" className="h-32 w-auto hover:grayscale-0 grayscale" />
       ))}
       <div className="h-32 text-6xl font-extrabold w-auto">Avnit's Production</div>
     </div>
+
     </div>
     </div>
 

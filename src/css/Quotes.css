@@ -1,20 +1,7 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    background-color: #b71540;
-    font-family: 'Montserrat', sans-serif;
-  }
   
   .box {
     background-color: transparent;
     border-radius: 3px;
-    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,7 +41,7 @@
       width: 50px;
       line-height: 50px !important;
       background-color: #fff;
-      color: #2C3A47;
+      color: #2c3a47;
     }
     .fa2 {
       position: absolute;
@@ -68,7 +55,7 @@
       left: -30px;
       width: calc(100% + 60px);
       height: calc(100% - 60px);
-      background-color: #2C3A47;
+      background-color: #2c3a472f;
       border-radius: 3px;
       transition: .4s;
       .fa1 {
