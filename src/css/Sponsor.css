@@ -1,0 +1,43 @@
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  .wrap{
+  display:inline-block;
+  height:200px;width:200px;
+  position:relative;
+  overflow:hidden;
+}
+.wrap img{
+  position:absolute;top:0;left:0;height:100%;width:100%;
+}
+.wrap:before{
+  content:"";z-index:10;
+  position:absolute;height:200%;width:200%;top:-120%;left:-120%;
+  background:linear-gradient(transparent 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 55%,
+    transparent 100%);
+    transition:all 2s;
+    transform:rotate(-45deg);
+    animation: shine 10s infinite forwards;
+}
+@keyframes shine{
+  0%{top:-120%;left:-120%;}
+  10%{left:100%;top:100%;}
+  20%{left:100%;top:100%;}
+  100%{left:100%;top:100%;}
+  
+}
