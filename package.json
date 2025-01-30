@@ -16,6 +16,7 @@
     "axios": "^1.7.9",
     "echarts-for-react": "^3.0.2",
     "framer-motion": "^11.11.11",
+    "gasp": "^0.0.2",
     "gsap": "^3.12.7",
     "lucide-react": "^0.454.0",
     "react": "^18.3.1",
