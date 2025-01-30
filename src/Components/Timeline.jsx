@@ -57,14 +57,14 @@ const Timeline = ({ setObserver, callback }) => {
         <div id="circle2" ref={circle2} className="circle ">
           <p className="pc:rotate-90">2</p>
         </div>
-        <div className="message pc:rotate-90">{message2?<Quotes ind={2}/>:""}</div>
+        <div className="message pc:rotate-90">{message2?<Quotes ind={1}/>:""}</div>
       </div>
       <div id="timeline3" ref={timeline3} className="timeline  pc:rounded-lg pc:my-2" />
       <div className="circleWrapper">
         <div id="circle3" ref={circle3} className="circle ">
           <p className="pc:rotate-90">3</p>
         </div>
-        <div className="message pc:rotate-90">{message3?<Quotes ind={4}/>:""}</div>
+        <div className="message pc:rotate-90">{message3?<Quotes ind={2}/>:""}</div>
       </div>
     </div>
     </div>
@@ -79,9 +79,10 @@ export default function TimelineStep() {
   };
 
   return (
-    <div className="App flex flex-col h-96" >
-      <h1>react-scroll-animation component</h1>
-      <div className="stub1 relative">⬇️ Events ⬇️</div>
+    <div className="pc:h-96" >
+      {/* <h1>react-scroll-animation component</h1> */}
+      <div className={`  mobile:absolute mobile:hidden stub1` }>⬇️ Events ⬇️</div>
+      <div className={`  pc:absolute pc:hidden Mstub1` }>⬇️ Events ⬇️</div>
       <TimelineObserver
         initialColor="#ff05057e"
         fillColor="green"
