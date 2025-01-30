@@ -385,24 +385,6 @@ const TeamPage = () => {
                   ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                   : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
-              style={{
-                backgroundColor:
-                  selectedRole === role
-                    ? themeMode === 'light'
-                      ? 'black' // In light theme, selected button is black
-                      : 'white' // In dark theme, selected button is white
-                    : themeMode === 'light'
-                    ? 'var(--button-bg-light)' // Light theme unselected button
-                    : 'var(--button-bg-dark)', // Dark theme unselected button
-                color:
-                  selectedRole === role
-                    ? themeMode === 'light'
-                      ? 'white' // In light theme, selected button text is white
-                      : 'black' // In dark theme, selected button text is black
-                    : themeMode === 'light'
-                    ? 'black' // Light theme unselected button text
-                    : 'white', // Dark theme unselected button text
-              }}
             >
               {role}
             </button>
@@ -449,7 +431,7 @@ const TeamPage = () => {
 
         {/* Display other roles */}
         {selectedRole !== 'Members' && (
-          <div className="team-grid flex flex-wrap justify-center gap-8 w-full mt-8">
+          <div className="team-grid flex flex-wrap justify-center gap-8 w-full mt-8 sm:grid sm:grid-cols-1 sm:justify-items-center">
             {filteredTeamByRole.length > 0 ? (
               filteredTeamByRole.map((member, index) => (
                 <TeamCard
