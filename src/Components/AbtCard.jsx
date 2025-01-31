@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ThemeContext } from '../contexts/theme';
 import { motion,animate, delay } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import withAnimation from './WithAnimation';
 gsap.registerPlugin(ScrollTrigger);
 
 // import '../css/button.css'
@@ -152,4 +153,4 @@ const AbtCard = () => {
   )
 }
 
-export default AbtCard
+export default withAnimation(AbtCard)

@@ -96,3 +96,6 @@ body *{
         visibility: visible;
     }
 }
+#particle{
+    position: absolute;
+}

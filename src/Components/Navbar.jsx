@@ -53,7 +53,7 @@ function Navbar() {
 
   return (
     <>
-    <div id='navbar' className="z-[50000] mobile:hidden mobile:absolute sticky top-0 mt-6 flex flex-col justify-center  w-screen">
+    <div id='navbar' className="z-50 mobile:hidden mobile:absolute sticky top-0 mt-6 flex flex-col justify-center  w-screen">
 
     <div className={` top-0 shadowNav -mt-4  w-4/5 flex items-center gap-10 justify-between px-5 py-3  m-auto  rounded-3xl z-30 bg-opacity-5  ${themeMode==='dark' ? 'bg-black bg-opacity-80' : 'bg-white bg-opacity-80'} `} style={{}}>
         <section className='nav-left flex justify-center items-center gap-1'>
