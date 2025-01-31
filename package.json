@@ -4,22 +4,33 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",      
-    "build": "vite build",  
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"  
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.7.1",
     "axios": "^1.7.9",
     "echarts-for-react": "^3.0.2",
+    "font-awesome": "^4.7.0",
     "framer-motion": "^11.11.11",
+    "gasp": "^0.0.2",
+    "gsap": "^3.12.7",
     "lucide-react": "^0.454.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-intersection-observer": "^9.13.1",
     "react-router-dom": "^6.27.0",
-    "styled-components": "^6.1.13"
+    "react-slideshow-image": "^4.3.2",
+    "react-timeline-animation": "^1.2.3",
+    "react-vertical-timeline-component": "^3.5.3",
+    "styled-components": "^6.1.13",
+    "tsparticles": "^1.43.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

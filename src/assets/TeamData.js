@@ -100,6 +100,16 @@ export const data = [
     github: "https://github.com/johndoe" 
   },
   {
+    name: "Tahmid Choudhury",
+    imageUrl: "https://i.imghippo.com/files/ut3744SSU.jpg",
+    position: "member",
+    team: "Developer",
+    facebook: "https://www.facebook.com/muhsina.muhsina.946954/",
+    instagram: "/https://www.instagram.com/tahmid786/",
+    linkedin: "https://www.linkedin.com/in/tahmid019",
+    github: "https://github.com/Tahmid019" 
+  },
+  {
     name: "Tahmid Ansari",
     imageUrl: "https://i.imghippo.com/files/heXs91728924022.jpg",
     position: "member",

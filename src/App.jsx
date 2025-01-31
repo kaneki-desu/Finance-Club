@@ -8,14 +8,18 @@ import '../src/css/App.css';
 // Components
 import Navbar from './Components/Navbar';
 import Home from './pages/Home';
-import About from './pages/About';
 import Sponsor from './pages/Sponser'; // Fixed filename
 import Events from './pages/Events';
 import Team from './pages/Team';
 
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
+ Priyanshu
 // import Blog from './pages/Blog';
+
+// import Blog from './pages/Blog';
+import Footer from './Components/Footer';
+ main
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark');
@@ -36,13 +40,13 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/sponsor" element={<Sponsor />} />
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           {/* <Route path="/blog" element={<Blog />} /> */}
         </Routes>
       </Router>
+      <Footer/>
     </ThemeProvider>
   );
 }

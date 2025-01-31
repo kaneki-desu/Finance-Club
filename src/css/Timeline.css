@@ -1,0 +1,74 @@
+   .timeline {
+    height: 300px;
+    width: 8px;
+    border-radius: 100px;
+  }
+  .stub1 {
+    line-height: 300px;
+    font-size: 24px;
+    background-color: #eae4e400;
+  }
+  .Mstub1 {
+    line-height: 100px;
+    font-size: 24px;
+    background-color: #eae4e400;
+  }
+  
+  @media (min-width: 768px) {
+    .wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20%;
+    }
+    .LineRotate {
+    transform-origin: 0% 0; /* Origin at the top-right corner */
+    -webkit-transform-origin: 100% 0; /* Safari and older browsers */
+    -moz-transform-origin: 100% 0; /* Firefox */
+    -ms-transform-origin: 100% 0; /* IE 9+ */
+    -o-transform-origin: 100% 0; /* Opera */
+  
+    transform: rotate(90deg) ; /* Rotate 90 degrees and flip in Y-direction */
+    -webkit-transform: rotate(90deg) ; /* Safari and older browsers */
+    -moz-transform: rotate(90deg) ; /* Firefox */
+    -ms-transform: rotate(90deg) ; /* IE 9+ */
+    -o-transform: rotate(90deg) ; /* Opera */
+  }
+  .FlipX{
+    transform: scale(-1, -1); /* Flip in X-direction */
+    -webkit-transform: scale(-1, -1); /* Safari and older browsers */
+    -moz-transform: scale(-1, -1); /* Firefox */
+    -ms-transform: scale(-1, -1); /* IE 9+ */
+    -o-transform: scale(-1, -1); /* Opera */
+  }
+  
+  }
+  .stub2 {
+    height: 1000px;
+  }
+  
+  .circle {
+      width: 60px;
+      height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 7px solid rgba(0,0,0, 0.5); 
+    
+    border-radius: 50%;
+    background-color: #e5e5e5;
+  }
+  
+  .circleWrapper {
+    position: relative;
+  }
+  
+  .message {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    min-width: 150px;
+    font-weight: bold;
+  }
+  
