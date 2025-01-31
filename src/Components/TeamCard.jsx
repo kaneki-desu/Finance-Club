@@ -52,7 +52,7 @@ import '../css/Card.css';
 
 const TeamCard = ({ name, position, url, facebook, instagram, linkedin, github }) => {
   return (
-    <div className="profile-card relative">
+    <div className="profile-card relative z-10">
       <div className="img">
         <img src={url} alt={`${name}'s profile`} />
       </div>

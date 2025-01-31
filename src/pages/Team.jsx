@@ -735,7 +735,7 @@ const TeamPage = () => {
 
         {/* Display team categories for "Members" */}
         {selectedRole === 'Members' && (
-          <div className="team-sections w-full mt-8">
+          <div className="team-sections w-full mt-16">
             {Object.keys(memberTeams).map((team) => {
               const teamMembers = memberTeams[team];
 

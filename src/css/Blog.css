@@ -1,9 +1,4 @@
-.card {
-  width: 350px; /* Increase width */
-  height: 250px; /* Increase height */
-  padding: 20px; /* Increase padding */
-  font-size: 1.2rem; /* Increase text size */
-}
+
 body {
     --background-color: #18181B;
     --text-color: #A1A1AA;
@@ -138,16 +133,30 @@ body {
       margin: 12px 0 4px 0;
       font-family: inherit;
       font-weight: 600;
-      font-size: 14px;
       line-height: 2;
-      color: var(--card-label-color);
+      color: var(--text-primary);
     }
-  
+    .text-ellipsis {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2; /* Number of lines to show before truncating */
+    }
+    .read-more-btn {
+      background-color: transparent;
+      border: none;
+      color: #007bff;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: underline;
+      padding: 0;
+      margin-top: 8px;
+    }
+        
     p {
-      z-index: 2;
       position: relative;
       margin: 0;
-      font-size: 14px;
       line-height: 1.7;
       color: var(--text-color);
     }
@@ -520,7 +529,7 @@ body {
     &:before {
       content: '';
       position: absolute;
-      inset: 0 -60% 65% -60%;
+      inset: 0 60% 65% -60%;
       background-image: radial-gradient(ellipse at top, #10B981 0%, var(--background-color) 50%);
       opacity: var(--blur-opacity);
     }
