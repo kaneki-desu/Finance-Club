@@ -75,9 +75,19 @@ input[type=search] {
   .content .header__fake {
     position: absolute;
     top: -30px;
-    left: 50%;
-    margin-left: -160px;
-    width: 320px;
+    /* left: 50%; */
+    /* margin-left: -160px; */
+    /* From https://css.glass */
+    padding-left: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    border-end-end-radius: 0;
+    border-start-start-radius: 0;
+    width: 90vw;
   }
   
   .content .header__fake i {
@@ -192,8 +202,6 @@ input[type=search] {
 
   /* dropdown */
 
-$menu-link-active-colors: var(--primary-color), var(--info-color),
-    var(--success-color), var(--warning-color), var(--danger-color);
   
   .menu-hover-fill {
     li {

@@ -15,6 +15,7 @@ import Team from './pages/Team';
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
 import Blog from './pages/Blog';
+import Footer from './Components/Footer';
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark');
@@ -41,6 +42,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>
+      <Footer/>
     </ThemeProvider>
   );
 }

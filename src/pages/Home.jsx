@@ -6,7 +6,7 @@ import LightBg from '../images/light-bg.png'
 import { ThemeContext } from '../contexts/theme';
 import ParticleBackground from '../Components/Particle';
 import TimelineStep from '../Components/Timeline';
-import Gallery from '../Components/Gallery';
+import Message from '../Components/Message';
 import Sponsers from '../Components/Sponsors';
  '../Components/Timeline';
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
       <div className='relative h-full w-full bg-opacity-80 '>
         <AbtCard/>
         <TimelineStep/>
-        <Gallery/>
+        <Message/>
         <Sponsers/>
       </div>
     </>

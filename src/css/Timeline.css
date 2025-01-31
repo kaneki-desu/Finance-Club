@@ -1,9 +1,15 @@
    .timeline {
     height: 300px;
     width: 8px;
+    border-radius: 100px;
   }
   .stub1 {
     line-height: 300px;
+    font-size: 24px;
+    background-color: #eae4e400;
+  }
+  .Mstub1 {
+    line-height: 100px;
     font-size: 24px;
     background-color: #eae4e400;
   }

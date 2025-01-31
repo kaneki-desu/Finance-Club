@@ -11,10 +11,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 // import '../css/button.css'
 const fadeINAnimationVariants={
-  initial:{opacity:0,y:50},
+  initial:{opacity:0,y:50,filter:"blur(10px)"},
   animate:(index)=>{
     return {
-      opacity:1,y:0,x:0,
+      opacity:1,y:0,x:0,filter:"blur(0px)",
       transition:{
         duration:1,
         delay:0.05 * index,

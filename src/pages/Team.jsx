@@ -773,7 +773,7 @@ const TeamPage = () => {
 
         {/* Display other roles */}
         {selectedRole !== 'Members' && (
-          <div className="team-grid flex flex-wrap justify-center gap-8 w-full mt-16">
+          <div className="team-grid flex flex-wrap justify-center gap-8 w-full mt-8">
             {filteredTeamByRole.length > 0 ? (
               filteredTeamByRole.map((member, index) => (
                 <TeamCard
@@ -800,4 +800,4 @@ const TeamPage = () => {
   );
 };
 
-export default TeamPage;  
+export default TeamPage;
