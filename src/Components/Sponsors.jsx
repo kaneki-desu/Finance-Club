@@ -11,6 +11,7 @@ const sponsors = [
 
 export default function SponsorsMarquee() {
   const [isShining, setIsShining] = useState(false);
+  console.log(sponsors.length)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,7 +25,7 @@ export default function SponsorsMarquee() {
   }, []);
   return (
     <>
-    <div className="mt-32 mobile:absolute mobile:hidden" style={{ height: 600 }}
+    <div className="mt-52 mobile:absolute mobile:hidden" style={{ height: 600 }}
     variants={fadeIn}
         initial="initial"
         whileInView="animate"
@@ -32,7 +33,7 @@ export default function SponsorsMarquee() {
           once:true,
         }}
     >
-      <motion.h1 className="text-6xl font-semibold mt-10"
+      <motion.h1 className="text-6xl font-semibold pt-4"
        variants={fadeIn}
        initial="initial"
        whileInView="animate"
@@ -70,7 +71,7 @@ export default function SponsorsMarquee() {
         <img key={index} src={src} alt="Sponsor" className="h-32 w-auto hover:grayscale-0 grayscale" />
         </motion.div>
       ))}
-      <div className="h-32 text-6xl font-extrabold w-auto">Avnit's Production</div>
+      <div className="h-32 text-6xl font-mono font-bold w-auto">Avnit's Production</div>
     </div>
       
     </div>
@@ -128,7 +129,7 @@ export default function SponsorsMarquee() {
       viewport={{
         once:true,
       }}
-      custom={sponsors.length+1}
+      custom={4}
       >Avnit's Production</motion.div>
     </div>
       
