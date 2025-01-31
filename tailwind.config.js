@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        title:["Archivo","sans-serif"],
+        title:["Faculty Glyphic","sans-serif"],
       },
       screens: {
         'mobile': { 'max': '500px' },
