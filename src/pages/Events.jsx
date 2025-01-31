@@ -375,7 +375,7 @@ const upcomingEvents = [
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
   },
   {
-    title: "UX/UI Web-Design + Mobile Design",
+    title: "Treasure Hunt: A finance-based problem-solving event encouraging teamwork, strategy, and quick thinking while enhancing financial knowledge.",
     startDate: "04.11.2022",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340104/TreasureHunt_yyhcbr.jpg",
   },
@@ -383,7 +383,7 @@ const upcomingEvents = [
 
 const speakerSessions = [
   {
-    title: "Annual package 'Product+UX/UI+Graph designer 2022'",
+    title: "Devayukta Karva Session: Insights from Devayukta Karva on navigating volatile markets, emphasizing intellectual engagement and investment strategies.",
     startDate: "04.11.2022",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/SpeakerSession_usmppk.jpg",
   },
@@ -392,23 +392,23 @@ const speakerSessions = [
 
 const pastEvent = [
   {
-    title: "Digital Marketing",
+    title: "Financial Quiz: A competitive quiz testing finance and investment knowledge, encouraging learning through challenging questions and quick responses.",
     startDate: null,
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/QuizCompetation_qyndfa.jpg",
   },
   {
-    title: "Interior Design",
+    title: "Group Discussion: Participants discussed economic and financial issues, promoting teamwork, critical thinking, and communication on relevant industry topics",
     startDate: "31.10.2022",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/GD_kaajws.jpg",
   },
   {
-    title: "Graphic Design",
+    title: "Trading Mania: A collaboration blending finance, technology, and creativity, offering a comprehensive and interdisciplinary financial education experience.",
     startDate: "04.11.2022",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340102/Competition2_h6pnre.jpg",
   },
   
   {
-    title: "Digital Marketing",
+    title: "National Level Trading Championship : A national event merging academic rigor and competitive spirit, fostering excellence and participation from top institutions",
     startDate: null,
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/Competition_poukrf.jpg",
   },
