@@ -12,15 +12,16 @@ const TextUpDown = () => {
       themeMode==="dark"?setBgImg(WmoneySVG):setBgImg(BmoneySVG)
     },[themeMode])
   return (
-    <div className='relative h-screen w-screen flex-col flex mobile:justify-between mobile:gap-40' style={{paddingLeft:"12vw", paddingTop:"15vw"}}>
-      <div className=" flex flex-col justify-start items-start mb-4 text-4xl font-bold tracking-tighter -mt-32 sm:text-5xl lg:text-6xl xl:text-7xl">
+    <>
+    <div className='relative pc:hidden pc:absolute h-screen w-screen flex-col flex mobile:justify-center mobile:gap-40 px-5' style={{ paddingTop:"15vw"}}>
+      <div className=" flex flex-col justify-center items-end mb-4 text-5xl font-bold tracking-tighter -mt-32 sm:text-5xl lg:text-6xl xl:text-7xl">
       <h1 class="mb-4 text-4xl font-bold tracking-tighter  sm:text-5xl lg:text-6xl xl:text-7xl">Finance & Investment Club</h1>
-      <p class="mb-8 text-lg tracking-tighter  sm:text-xl xl:text-3xl">NIT Silchar</p>
+      <p class="mb-8 text-lg tracking-tighter  sm:text-xl xl:text-3xl pr-10 ">- NIT Silchar</p>
       </div>
       <div className="textandgif flex justify-between pr-40">
       <div className="textUpDown flex flex-col justify-center">
 
-        <ul className='flex justify-center Minner-heading -z-1 '>
+      <ul className='mobile:hidden flex justify-center mobile:absolute inner-heading -z-1 '>
             <div >
             Create<br/>
             Prosper<br/>
@@ -29,13 +30,56 @@ const TextUpDown = () => {
             <p className='flex justify-left gap-1 items-center text-left normal-case'>INVEST <BadgeIndianRupee size={100} color='green' /></p> <br/>
             </div>
         </ul>
+        {/* <ul className=' Minner-heading -z-1 '>
+            <div >
+            Create<br/>
+            Prosper<br/>
+            {/* <p className='bg-red-500'>Create</p><br/>
+            <p className='bg-red-100'>Innovate</p><br/> */}
+            {/* <p className='flex justify-left gap-1 items-center text-left normal-case'>INVEST <BadgeIndianRupee size={100} color='green' /></p> <br/>
+            </div> */}
+        {/* </ul> */} 
       </div>
 
-        <img className='-mx-8 pc:scale-125' src={bgImg}></img>
+        <img className='mx-20 -mt-20 scale-150 ' src={bgImg }></img>
       </div>
 
 
     </div>
+    <div className='relative mobile:hidden mobile:absolute h-screen w-screen flex-col flex mobile:justify-between mobile:gap-40' style={{paddingLeft:"12vw", paddingTop:"15vw"}}>
+      <div className=" flex flex-col justify-start items-start mb-4 text-4xl font-bold tracking-tighter -mt-32 sm:text-5xl lg:text-6xl xl:text-7xl">
+      <h1 class="mb-4 text-4xl font-bold tracking-tighter  sm:text-5xl lg:text-6xl xl:text-7xl">Finance & Investment Club</h1>
+      <p class="mb-8 text-lg tracking-tighter  sm:text-xl xl:text-3xl">NIT Silchar</p>
+      </div>
+      <div className="textandgif flex mobile:flex-col justify-around pr-40">
+      <div className="textUpDown flex flex-col justify-center">
+
+      <ul className='mobile:hidden flex justify-center mobile:absolute inner-heading -z-1 '>
+            <div >
+            Create<br/>
+            Prosper<br/>
+            {/* <p className='bg-red-500'>Create</p><br/>
+            <p className='bg-red-100'>Innovate</p><br/> */}
+            <p className='flex justify-left gap-1 items-center text-left normal-case'>INVEST <BadgeIndianRupee size={100} color='green' /></p> <br/>
+            </div>
+        </ul>
+        {/* <ul className=' Minner-heading -z-1 '>
+            <div >
+            Create<br/>
+            Prosper<br/>
+            {/* <p className='bg-red-500'>Create</p><br/>
+            <p className='bg-red-100'>Innovate</p><br/> */}
+            {/* <p className='flex justify-left gap-1 items-center text-left normal-case'>INVEST <BadgeIndianRupee size={100} color='green' /></p> <br/>
+            </div> */}
+        {/* </ul> */} 
+      </div>
+
+        <img className='-mx-8 -mt-20 pc:scale-125' src={bgImg}></img>
+      </div>
+
+
+    </div>
+    </>
   )
 }
 

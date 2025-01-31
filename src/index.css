@@ -8,6 +8,14 @@
     src: local('Archivo_Narrow'),
       url('\Fonts\Archivo_Narrow\static\ArchivoNarrow-Regular.ttf') format('truetype');
   }
+
+  
+.font2 {
+    font-family: "Archivo Narrow", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
 :root{
     --background: #ffff;
     --text-primary:#000;
@@ -17,6 +25,7 @@
 :root{
     background: var(--background);
     color: var(--text-primary);
+    font-family: ;
 }
 .dark{
     --background: #000;
