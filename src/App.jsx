@@ -15,7 +15,7 @@ import Team from './pages/Team';
 
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
-import Blog from './pages/Blog';
+// import Blog from './pages/Blog';
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark');
@@ -40,7 +40,7 @@ function App() {
           <Route path="/sponsor" element={<Sponsor />} />
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
         </Routes>
       </Router>
     </ThemeProvider>
