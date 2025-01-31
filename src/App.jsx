@@ -8,14 +8,14 @@ import '../src/css/App.css';
 // Components
 import Navbar from './Components/Navbar';
 import Home from './pages/Home';
-import Sponsor from './pages/Sponser'; // Fixed filename
+import Sponser from './pages/Sponser'; 
 import Events from './pages/Events';
 import Team from './pages/Team';
 import Blog2 from './pages/Blog2';
 
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
-// import Blog from './pages/Blog';
+import Blog from './pages/Blog';
 
 // import Blog from './pages/Blog';
 import Footer from './Components/Footer';
@@ -42,7 +42,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/sponsor" element={<Sponsor />} />
+          {/* <Route path="/sponser" element={<Sponser />} /> */}
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           <Route path="/blog" element={<Blog2 />} />

@@ -69,6 +69,7 @@ function Navbar() {
         <ul className='flex gap-6 text-2xl'>
         <Link to="/" className='NavUnderline'>Home</Link>
         <Link to="/events" className='NavUnderline'>Events</Link>
+        {/* <Link to="/sponser" className='NavUnderline'>Sponser</Link> */}
         <Link to="/blog" className='NavUnderline'>Blog</Link>
         <Link to="/team" className='NavUnderline'>Team</Link>
         <ThemeBtn />
