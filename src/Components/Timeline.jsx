@@ -81,8 +81,8 @@ export default function TimelineStep() {
   return (
     <div className="pc:h-96" >
       {/* <h1>react-scroll-animation component</h1> */}
-      <div className={`  mobile:absolute mobile:hidden stub1` }>.</div>
-      <div className={`  pc:absolute pc:hidden Mstub1` }>.</div>
+      <div className={`  mobile:absolute mobile:hidden stub1` }>Quotes of the day.</div>
+      <div className={`  pc:absolute pc:hidden Mstub1` }>Quotes of the day</div>
       <TimelineObserver
         initialColor="#ff05057e"
         fillColor="green"
