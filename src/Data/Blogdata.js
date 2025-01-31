@@ -1,8 +1,10 @@
 const Blogdata = [
 	{
+
+		
 		title: 'Getting Started',
 		content:
-			"In today's fast-paced world, understanding finance and investment is no longer a luxury—it's a necessity. Whether you're planning for retirement, saving for a big purchase, or simply looking to grow your wealth, having a solid grasp of financial principles can make all the difference. This blog will walk you through the basics of finance and investment, offering practical tips to help you make informed decisions and secure your financial future.",
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit adipisci labore expedita doloremque delectus ipsum nulla impedit exercitationem nemo quisquam, consequatur, consectetur ab reiciendis tempora provident voluptas dolore vero hic eius, dolorem aperiam cum. Accusamus nemo veniam eaque culpa hic quisquam, mollitia iure dolor impedit aspernatur veritatis, dolores dignissimos debitis nisi eligendi, officiis ullam sed odit provident asperiores voluptatem quos fugit deleniti! Fugit atque repellat rerum tempore, necessitatibus quis reprehenderit obcaecati autem commodi dicta laboriosam expedita minima placeat. Commodi eaque vel nihil dicta. Nihil alias laborum quia vero nobis ullam, et eveniet ut, facere odit magni blanditiis dolores, impedit tempora.",
 		imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738263740/Priyanshu1_firqak.jpg"
 	},
 	{
