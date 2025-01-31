@@ -14,8 +14,12 @@ import Team from './pages/Team';
 
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
-import Blog from './pages/Blog';
+// import Blog from './pages/Blog';
+
+// import Blog from './pages/Blog';
 import Footer from './Components/Footer';
+import LoadingScreen from './Components/LoadingScreen';
+import AnimatedWrapper from './Components/AnimatedWrapper';
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark');
@@ -33,13 +37,14 @@ function App() {
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <Router>
+        <LoadingScreen/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/sponser" element={<Sponser />} /> */}
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
         </Routes>
       </Router>
       <Footer/>
@@ -47,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default (App);

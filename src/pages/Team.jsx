@@ -713,7 +713,7 @@ const TeamPage = () => {
         </h1>
 
         {/* Role Selector */}
-        <div className="flex justify-evenly w-full absolute z-10 mt-16">
+        <div className="flex justify-evenly w-full absolute z-10 mt-16 pt-6">
           {['President', 'Heads', 'Analysts', 'Members'].map((role) => (
             <div
               key={role}

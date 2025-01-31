@@ -1,10 +1,33 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../contexts/theme';
 import '../css/Messages.css'
+import { fadeIn } from './fadeInAnimation';
+import { motion} from 'framer-motion';
+
+const fadeINAnimationVariants={
+  initial:{opacity:0,y:50,filter:"blur(10px)"},
+  animate:(index)=>{
+    return {
+      opacity:1,y:0,x:0,filter:"blur(0px)",
+      transition:{
+        duration:1,
+        delay:0.05 * index,
+      }
+    }
+  }
+}
 const Message = () => {
   const {themeMode}=useContext(ThemeContext)
   return (
-    <div>
+    <motion.div
+    variants={fadeIn}
+    initial="initial"
+    whileInView="animate"
+    viewport={{
+      once:true,
+    }}
+    // custom={ind}
+    >
         <div className="flex  flex-wrap items-center justify-end gap-10 md:gap-20 pc:mt-28 pc:w-7/12 mobile:w-full  pc:ml-20 pc:h-[400px] mobile:h-full" style={{marginBottom:'200px'}}>
         <div className="messageBox w-full h-full p-5   ">
             <div className={`${themeMode==='dark'?'glassMorphD':'glassMorphL'} h-full w-full hover:shadow-xl hover:shadow-purple-900 hover:duration-1000 duration-1000 hover:ease-in-out hover:scale-105`}>
@@ -20,7 +43,7 @@ const Message = () => {
 
           </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
