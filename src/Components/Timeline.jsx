@@ -1,11 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 
 import TimelineObserver from "react-timeline-animation";
 
 import "../css/Timeline.css";
 import Quotes from "./Quotes";
+import { thead } from "framer-motion/client";
+import { ThemeContext } from "../contexts/theme";
 
 const Timeline = ({ setObserver, callback }) => {
+  const {themeMode}=useContext(ThemeContext)
   const [message1, setMessage1] = useState("");
   const [message2, setMessage2] = useState("");
   const [message3, setMessage3] = useState("");
@@ -47,21 +50,21 @@ const Timeline = ({ setObserver, callback }) => {
      
       <div id="timeline1" ref={timeline1} className="timeline pc:absolute pc:invisible pc:rounded-lg pc:my-2" />
       <div className="circleWrapper">
-        <div id="circle1" ref={circle1} className="circle ">
+        <div id="circle1" ref={circle1} className="circle " style={{borderColor:(themeMode=='dark'?'rgba(0,0,0,0.5)':'rgba(255,255,255,0.8)')}}>
           <p className="pc:rotate-90">1</p>
         </div>
         <div className="message pc:rotate-90">{message1?<Quotes ind={0}/>:""}</div>
       </div>
       <div id="timeline2" ref={timeline2} className="timeline  pc:rounded-lg pc:my-2" />
       <div className="circleWrapper">
-        <div id="circle2" ref={circle2} className="circle ">
+        <div id="circle2" ref={circle2} className="circle "  style={{borderColor:(themeMode=='dark'?'rgba(0,0,0,0.5)':'rgba(255,255,255,0.8)')}}>
           <p className="pc:rotate-90">2</p>
         </div>
         <div className="message pc:rotate-90">{message2?<Quotes ind={1}/>:""}</div>
       </div>
       <div id="timeline3" ref={timeline3} className="timeline  pc:rounded-lg pc:my-2" />
       <div className="circleWrapper">
-        <div id="circle3" ref={circle3} className="circle ">
+        <div id="circle3" ref={circle3} className="circle "  style={{borderColor:(themeMode=='dark'?'rgba(0,0,0,0.5)':'rgba(255,255,255,0.8)')}}>
           <p className="pc:rotate-90">3</p>
         </div>
         <div className="message pc:rotate-90">{message3?<Quotes ind={2}/>:""}</div>

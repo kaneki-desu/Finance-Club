@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 
 // Define the animation variants
@@ -48,14 +48,16 @@ const withAnimation = (Component) => {
     const yfadeControls = useAnimation();
     const yfadeControls1 = useAnimation();
     const yfadeControls2 = useAnimation();
+  const [loadOnce, setLoadOnce]=useState(false)
 
     useEffect(() => {
       // Start the animation after 4 seconds delay
       setTimeout(() => {
         // Trigger the animation using Framer Motion controls
         controls.start("animate");
-      }, 3000);
-    }, [controls]);
+        setLoadOnce(true)
+      }, loadOnce?1000:3000);
+    }, [controls,loadOnce]);
 
     return (
       <div>
