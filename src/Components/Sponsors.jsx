@@ -23,7 +23,7 @@ export default function SponsorsMarquee() {
   }, []);
   return (
     <div className="mt-32" style={{ height: 600 }}>
-      <h1>Sponsers</h1>
+      <h1 className="text-6xl font-semibold mt-10">Sponsers</h1>
     <div className="  py-4 h-full flex flex-col justify-center" >
       {/* <motion.div
         className="flex space-x-8 w-max bg-green-400"

@@ -48,8 +48,8 @@ const TextUpDown = () => {
     </div>
     <div className='relative mobile:hidden mobile:absolute h-screen w-screen flex-col flex mobile:justify-between mobile:gap-40' style={{paddingLeft:"12vw", paddingTop:"15vw"}}>
       <div className=" flex flex-col justify-start items-start mb-4 text-4xl font-bold tracking-tighter -mt-32 sm:text-5xl lg:text-6xl xl:text-7xl">
-      <h1 class="mb-4 text-4xl font-bold tracking-tighter  sm:text-5xl lg:text-6xl xl:text-7xl">Finance & Investment Club</h1>
-      <p class="mb-8 text-lg tracking-tighter  sm:text-xl xl:text-3xl">NIT Silchar</p>
+      <h1 class="mb-4 text-2xl font-medium tracking-tighter  sm:text-5xl lg:text-6xl xl:text-7xl">Finance & Investment Club</h1>
+      <p class="mb-8 font-thin  text-lg tracking-tighter  sm:text-xl xl:text-3xl">NIT Silchar</p>
       </div>
       <div className="textandgif flex mobile:flex-col justify-around pr-40">
       <div className="textUpDown flex flex-col justify-center">
