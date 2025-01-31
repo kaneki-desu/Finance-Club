@@ -24,7 +24,11 @@ const fadeINAnimationVariants={
   }
 }
 const AbtCard = () => {
-    
+  const images=["https://i.postimg.cc/X7bV6fzb/Fin-farewell.jpg"
+                      ,"https://i.postimg.cc/prDRnry4/Fin-horizontal.jpg"
+                      ,"https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg"
+                      ,"https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg"
+                    ]
       const {themeMode}=useContext(ThemeContext)
     useEffect(()=>{
 
@@ -93,7 +97,7 @@ const AbtCard = () => {
         custom={20}
         className="abtpic w-full flex justify-end">
         {/* <div className='imgsample'></div> */}
-        <img src={demoImg} alt="" className='rounded-lg size-64  ml-5 mobile:ml-0 object-cover object-center h-5/6' />
+        <img src={images[0]} alt="" className='rounded-lg h-52  ml-5 mobile:ml-0 object-fill  object-center ' />
         </motion.div>
         <motion.div
         variants={fadeINAnimationVariants}
@@ -105,7 +109,7 @@ const AbtCard = () => {
         custom={20}
         className="abtpic w-full flex justify-start">
         {/* <div className='imgsample'></div> */}
-        <img src={demoImg} alt="" className='rounded-lg size-64  ml-5 mobile:ml-0 object-cover object-center h-5/6' />
+        <img src={images[1]} alt="" className='rounded-lg h-52 scale-150 ml-5 mobile:ml-0 object-cover object-center ' />
         </motion.div>
         <motion.div
         variants={fadeINAnimationVariants}
@@ -117,7 +121,7 @@ const AbtCard = () => {
         custom={20}
         className="abtpic w-full flex justify-end">
         {/* <div className='imgsample'></div> */}
-        <img src={demoImg} alt="" className='rounded-lg size-64  ml-5 mobile:ml-0 object-cover object-center h-5/6' />
+        <img src={images[2]} alt="" className='rounded-lg h-52 scale-125  ml-5 mobile:ml-0 object-cover object-center ' />
         </motion.div>
            </div>
     </motion.div>
