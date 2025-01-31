@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import Sponsor from './pages/Sponser'; // Fixed filename
 import Events from './pages/Events';
 import Team from './pages/Team';
-import Blog from './pages/Blog';
+import Blog2 from './pages/Blog2';
 
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
@@ -45,7 +45,7 @@ function App() {
           <Route path="/sponsor" element={<Sponsor />} />
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<Blog2 />} />
         </Routes>
       </Router>
       <Footer/>
