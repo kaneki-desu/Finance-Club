@@ -9,7 +9,8 @@ export const data = [
   },
   {
     name: "Ayush Mani",
-    imageUrl: "https://i.imghippo.com/files/7nprJ1728924749.jpg",
+    // imageUrl: "https://i.imghippo.com/files/7nprJ1728924749.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/Ayush_Mani_xbywqo.jpg",
     position: "Vice President",
     facebook: "https://www.facebook.com/sandeep.pandey.5437",
     instagram: "https://www.instagram.com/ayush_mani",
@@ -17,7 +18,7 @@ export const data = [
   },
   {
     name: "Harshit Bharali",
-    imageUrl: "https://i.imghippo.com/files/NJXpP1728924969.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356508/Harshit_Bharali_mulai7.jpg",
     position: "Design Head",
     facebook: "https://www.facebook.com/harshit.bharali",
     instagram: "https://www.instagram.com/harshit.bharali", 
@@ -33,7 +34,7 @@ export const data = [
   },
   {
     name: "Mriganka",
-    imageUrl: "https://i.imghippo.com/files/7cdJa1728927693.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356506/Untitled_jdmiu0.jpg",
     position: "Marketing Head",
     facebook: "https://www.facebook.com/mriganka",
     instagram: "https://www.instagram.com/mriganka",
@@ -91,7 +92,7 @@ export const data = [
   },
   {
     name: "Sibajit Mazumder ",
-    imageUrl: "https://i.imghippo.com/files/wnd6739IlQ.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/IMG-20241215-WA0015_-_Sicksib_1_juqowo.jpg",
     position: "member",
     team: "Developer",
     facebook: "https://www.facebook.com/share/1EcVwnC4ez/",
@@ -121,7 +122,7 @@ export const data = [
   },
   {
     name: "Devashish Gupta",
-    imageUrl: "https://i.imghippo.com/files/HEE1470QX.jpeg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/IMG_4089_-_Devashish_Gupta_vicf5i.jpg",
     position: "member",
     team: "Developer",
     facebook: "https://m.facebook.com/hackerDevashish/",
@@ -143,7 +144,7 @@ export const data = [
 
   {
     name: "Samir kumar",
-    imageUrl: "https://i.imghippo.com/files/egui1002Tts.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356502/IMG-20240928-WA0003_1_-_1002_Samir_kumar_souefw.jpg",
     position: "member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/profile.php?id=100092724821356",
@@ -161,7 +162,7 @@ export const data = [
   },
   {
     name: "Leena Mahaseth ",
-    imageUrl: "https://i.imghippo.com/files/dou2187Dt.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/20241217_142739_-_Leena_Mahaseth_lstg0p.jpg",
     position: "member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/leena.mahaseth",
@@ -170,7 +171,7 @@ export const data = [
   },
   {
     name: "Rajnish Kumar",
-    imageUrl: "https://i.imghippo.com/files/uNaO8324fs.webp",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/IMG_20241217_222542_673_-_Rajnish_Kumar_kke39m.webp",
     position: "member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/profile.php?id=100043628552432",
@@ -179,7 +180,7 @@ export const data = [
   },
   {
     name: "Saniya Parveen ",
-    imageUrl: "https://i.imghippo.com/files/ttK1998VGc.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356501/DocScanner_Dec_18_2024_2-11_PM-1_180049435537184_-_Tasmiya_Parveen_ssaiqt.jpg",
     position: "member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/profile.php?id=61551234719256",
@@ -188,7 +189,7 @@ export const data = [
   },
   {
     name: "Vadde Thrishank ",
-    imageUrl: "https://i.imghippo.com/files/YP8361ZcU.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/IMG_20241217_195830_-_vadde_thrishank_ibtzr5.jpg",
     position: "member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/profile.php?id=61550771336346&mibextid=ZbWKwL",
@@ -197,7 +198,7 @@ export const data = [
   },
   {
     name: "Vikrant Agarwala",
-    imageUrl: "https://i.imghippo.com/files/VLCN9619DvQ.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/InShot_20241105_210540445_-_Vikrant_Agarwala_qqyhjo.jpg",
     position: "member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/vikrant017?mibextid=ZbWKwL",
@@ -215,7 +216,7 @@ export const data = [
   },
   {
     name: "Lakshya Ujjwal",
-    imageUrl: "https://i.imghippo.com/files/RfZ9961Bew.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356506/WhatsApp_Image_2024-12-16_at_16.14.20_27c6b203_-_Alok_A124_xirinr.jpg",
     position: "member",
     team: "PR and Marketing",
     facebook: "",
@@ -224,7 +225,7 @@ export const data = [
   },
   {
     name: "Sahil Raj ",
-    imageUrl: "https://i.imghippo.com/files/LnTI3441PDM.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356502/IMG20241209153403_-_sahil_raj_1_vq0lu6.jpg",
     position: "member",
     team: "Junior Technical Analyst",
     facebook: "https://www.facebook.com/profile.php?id=61550635785749&mibextid=ZbWKwL",
@@ -261,7 +262,7 @@ export const data = [
  
   {
     name: "Ronit Raj",
-    imageUrl: "https://i.imghippo.com/files/DFbc2575jLw.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/20240926_191630_-_RONIT_RAJ_zki9e7.jpg",
     position: "member",
     team: "Content",
     facebook: "https://www.facebook.com/profile.php?id=61555882343317",
@@ -288,7 +289,7 @@ export const data = [
   },
   {
     name: "Abhinay Kumar Yadav ",
-    imageUrl: "https://i.imghippo.com/files/Mlx2383aYc.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356502/IMG_20240926_161917841_-_Abhinay_Kumar_mohuts.jpg",
     position: "member",
     team: "Design",
     facebook: "https://www.facebook.com/share/1AzFiQgnvq/",
