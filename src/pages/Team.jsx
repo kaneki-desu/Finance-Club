@@ -556,7 +556,7 @@ const TeamPage = () => {
             <div
               key={role}
               onClick={() => setSelectedRole(role)}
-              className={`p-1 px-3 rounded-full shadow-md font-semibold cursor-pointer transition-all duration-200 ${
+              className={`p-1  px-3 rounded-full shadow-md font-semibold cursor-pointer transition-all duration-200 ${
                 selectedRole === role
                   ? themeMode === 'light'
                     ? 'bg-black text-white hover:bg-gray-800'
@@ -611,7 +611,7 @@ const TeamPage = () => {
 
         {/* Display other roles */}
         {selectedRole !== 'Members' && (
-          <div className="team-grid flex flex-wrap justify-center gap-8 w-full mt-8">
+          <div className="team-grid flex flex-wrap justify-center gap-8 w-full mt-24">
             {filteredTeamByRole.length > 0 ? (
               filteredTeamByRole.map((member, index) => (
                 <TeamCard

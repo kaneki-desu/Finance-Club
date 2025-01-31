@@ -14,7 +14,7 @@ function Events() {
   }, []);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen mt-8 mobile:mt-32">
       <div className="fixed inset-0 -z-0">
         <ParticlesComponent id="particles-bg" />
       </div>
