@@ -648,15 +648,13 @@ import { data } from '../assets/TeamData';
 import BlackBg from '../images/black-bg.jpeg';
 import LightBg from '../images/images2.jpg';
 import ParticleBackground from '../Components/Particle';
+import {motion} from  'framer-motion';
+import { fadeIn, StaggeredfadeIn } from '../Components/fadeInAnimation';
 
 const TeamPage = () => {
-  const [bgImg, setBgImg] = useState(BlackBg);
+  // const [bgImg, setBgImg] = useState(BlackBg);
   const { themeMode } = useContext(ThemeContext); // Get the current theme mode (dark or light)
 
-  // Set background image based on theme mode
-  useEffect(() => {
-    themeMode === 'dark' ? setBgImg(BlackBg) : setBgImg(LightBg);
-  }, [themeMode]);
 
   const [selectedRole, setSelectedRole] = useState('President');
 
@@ -690,7 +688,13 @@ const TeamPage = () => {
   });
 
   return (
-    <div
+    <motion.div
+    variants={fadeIn}
+    initial='initial'
+    whileInView='animate'
+    viewport={{
+      once:true,
+    }}
       className="z-[-1000000] flex justify-center min-h-screen bg-transparent"
       style={{
         backgroundColor: themeMode === 'dark' ? 'var(--theme-color-dark)' : 'var(--theme-color-light)',
@@ -714,9 +718,16 @@ const TeamPage = () => {
 
         {/* Role Selector */}
         <div className="flex justify-evenly w-full absolute z-10 mt-16 pt-6">
-          {['President', 'Heads', 'Analysts', 'Members'].map((role) => (
-            <div
+          {['President', 'Heads', 'Analysts', 'Members'].map((role,index) => (
+            <motion.div
               key={role}
+              variants={fadeIn}
+              initial='initial'
+              whileInView='animate'
+              viewport={{
+                once:true,
+              }}
+              custom={index}
               onClick={() => setSelectedRole(role)}
               className={`p-1  px-3 rounded-full shadow-md font-semibold cursor-pointer transition-all duration-200 ${
                 selectedRole === role
@@ -729,13 +740,13 @@ const TeamPage = () => {
               }`}
             >
               {role}
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Display team categories for "Members" */}
         {selectedRole === 'Members' && (
-          <div className="team-sections w-full mt-16">
+          <motion.div className="team-sections w-full mt-16">
             {Object.keys(memberTeams).map((team) => {
               const teamMembers = memberTeams[team];
 
@@ -753,6 +764,7 @@ const TeamPage = () => {
                     <div className="team-grid flex flex-wrap justify-center gap-10 w-full mt-16 p-1">
                       {teamMembers.map((member, index) => (
                         <TeamCard
+                          index={index}
                           key={member.name + index} // Ensure unique keys
                           name={member.name}
                           position={member.position}
@@ -768,7 +780,7 @@ const TeamPage = () => {
                 )
               );
             })}
-          </div>
+          </motion.div>
         )}
 
         {/* Display other roles */}
@@ -796,7 +808,7 @@ const TeamPage = () => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

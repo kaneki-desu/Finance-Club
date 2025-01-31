@@ -23,3 +23,16 @@ export const StaggeredfadeIn={
       }
     }
   }
+export const MemStaggeredfadeIn={
+    initial:{opacity:0,y:20,filter:"blur(10px)"},
+    animate:(index)=>{
+      return {
+        opacity:1,y:0,filter:"blur(0px)",
+        transition:{
+          duration:1,
+          ease:"easeInOut",
+          delay:0.05*index
+        }
+      }
+    }
+  }

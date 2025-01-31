@@ -73,103 +73,103 @@
 
 
 
-import React from "react";
+// import React from "react";
 
-const events = [
-  {
-    title: "UI/Web & Graph design for teenagers 11-17 years old",
-    startDate: "04.11.2022",
-    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738263740/Priyanshu1_firqak.jpg",
-  },
-  {
-    title: "UX/UI Web-Design + Mobile Design",
-    startDate: "04.11.2022",
-    imageUrl: "https://via.placeholder.com/300",
-  },
-];
+// const events = [
+//   {
+//     title: "UI/Web & Graph design for teenagers 11-17 years old",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
+//   },
+//   {
+//     title: "UX/UI Web-Design + Mobile Design",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+// ];
 
-const speakerSessions = [
-  {
-    title: "Annual package 'Product+UX/UI+Graph designer 2022'",
-    startDate: "04.11.2022",
-    imageUrl: "https://via.placeholder.com/300",
-  },
-  {
-    title: "Motion Design",
-    startDate: "30.11.2022",
-    imageUrl: "https://via.placeholder.com/300",
-  },
-];
+// const speakerSessions = [
+//   {
+//     title: "Annual package 'Product+UX/UI+Graph designer 2022'",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/SpeakerSession_usmppk.jpg",
+//   },
+//   {
+//     title: "Motion Design",
+//     startDate: "30.11.2022",
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+// ];
 
-const competitions = [
-  {
-    title: "Graphic Design",
-    startDate: "04.11.2022",
-    imageUrl: "https://via.placeholder.com/300",
-  },
-  {
-    title: "Front-end development + jQuery + CMS",
-    startDate: null,
-    imageUrl: "https://via.placeholder.com/300",
-  },
-  {
-    title: "Digital Marketing",
-    startDate: null,
-    imageUrl: "https://via.placeholder.com/300",
-  },
-  {
-    title: "Interior Design",
-    startDate: "31.10.2022",
-    imageUrl: "https://via.placeholder.com/300",
-  },
-];
+// const competitions = [
+//   {
+//     title: "Graphic Design",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340102/Competition2_h6pnre.jpg",
+//   },
+//   {
+//     title: "Front-end development + jQuery + CMS",
+//     startDate: null,
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/Competition_poukrf.jpg",
+//   },
+//   {
+//     title: "Digital Marketing",
+//     startDate: null,
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+//   {
+//     title: "Interior Design",
+//     startDate: "31.10.2022",
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+// ];
 
-const CourseCard = ({ course }) => (
-  <div className="relative flex-1 min-w-[300px] max-w-[32%] bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-    <a href="#" className="block p-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center opacity-100" style={{ backgroundImage: `url(${course.imageUrl})` }}></div>
-      <img src={course.imageUrl} alt={course.title} className="w-full h-40 object-cover rounded-t-2xl" />
-      <div className="absolute top-0 right-0 h-32 w-32 bg-yellow-500 rounded-full transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 hover:scale-[10]"></div>
-      <div className="relative z-10">
-        <div className="font-bold text-lg mb-4 text-white">{course.title}</div>
-        {course.startDate && (
-          <div className="text-sm text-white">
-            Start: <span className="font-bold text-yellow-400">{course.startDate}</span>
-          </div>
-        )}
-      </div>
-    </a>
-  </div>
-);
+// const CourseCard = ({ course }) => (
+//   <div className="relative flex-1 min-w-[300px] max-w-[32%] bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-105">
+//     <a href="#" className="block p-6 relative overflow-hidden">
+//       <div className="absolute inset-0 bg-cover bg-center opacity-100" style={{ backgroundImage: `url(${course.imageUrl})` }}></div>
+//       <img src={course.imageUrl} alt={course.title} className="w-full h-40 object-cover rounded-t-2xl" />
+//       <div className="absolute top-0 right-0 h-32 w-32 bg-yellow-500 rounded-full transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 hover:scale-[10]"></div>
+//       <div className="relative z-10">
+//         <div className="font-bold text-lg mb-4 text-white">{course.title}</div>
+//         {course.startDate && (
+//           <div className="text-sm text-white">
+//             Start: <span className="font-bold text-yellow-400">{course.startDate}</span>
+//           </div>
+//         )}
+//       </div>
+//     </a>
+//   </div>
+// );
 
-const Events = () => (
-  <div className="w-full max-w-5xl mx-auto bg-black p-6">
-    <div className="flex flex-wrap justify-center gap-6 py-12">
-      <div className="w-full text-center mb-12">
-        <h2 className="text-3xl font-bold text-white">Events</h2>
-      </div>
-      {events.map((course, index) => (
-        <CourseCard key={index} course={course} />
-      ))}
+// const Events = () => (
+//   <div className="w-full max-w-5xl mx-auto bg-black p-6">
+//     <div className="flex flex-wrap justify-center gap-6 py-12">
+//       <div className="w-full text-center mb-12">
+//         <h2 className="text-3xl font-bold text-white">Events</h2>
+//       </div>
+//       {events.map((course, index) => (
+//         <CourseCard key={index} course={course} />
+//       ))}
 
-      <div className="w-full text-center my-12">
-        <h2 className="text-3xl font-bold text-white">Speaker Sessions</h2>
-      </div>
-      {speakerSessions.map((course, index) => (
-        <CourseCard key={index} course={course} />
-      ))}
+//       <div className="w-full text-center my-12">
+//         <h2 className="text-3xl font-bold text-white">Speaker Sessions</h2>
+//       </div>
+//       {speakerSessions.map((course, index) => (
+//         <CourseCard key={index} course={course} />
+//       ))}
 
-      <div className="w-full text-center my-12">
-        <h2 className="text-3xl font-bold text-white">Competitions</h2>
-      </div>
-      {competitions.map((course, index) => (
-        <CourseCard key={index} course={course} />
-      ))}
-    </div>
-  </div>
-);
+//       <div className="w-full text-center my-12">
+//         <h2 className="text-3xl font-bold text-white">Competitions</h2>
+//       </div>
+//       {competitions.map((course, index) => (
+//         <CourseCard key={index} course={course} />
+//       ))}
+//     </div>
+//   </div>
+// );
 
-export default Events;
+// export default Events;
 
 
 
@@ -248,3 +248,252 @@ export default Events;
 // };
 
 // export default Events;
+
+// import React from "react";
+
+// const events = [
+//   {
+//     title: "UI/Web & Graph design for teenagers 11-17 years old",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
+//   },
+//   {
+//     title: "UX/UI Web-Design + Mobile Design",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+// ];
+
+// const speakerSessions = [
+//   {
+//     title: "Annual package 'Product+UX/UI+Graph designer 2022'",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/SpeakerSession_usmppk.jpg",
+//   },
+//   {
+//     title: "Motion Design",
+//     startDate: "30.11.2022",
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+// ];
+
+// const competitions = [
+//   {
+//     title: "Graphic Design",
+//     startDate: "04.11.2022",
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340102/Competition2_h6pnre.jpg",
+//   },
+//   {
+//     title: "Front-end development + jQuery + CMS",
+//     startDate: null,
+//     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/Competition_poukrf.jpg",
+//   },
+//   {
+//     title: "Digital Marketing",
+//     startDate: null,
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+//   {
+//     title: "Interior Design",
+//     startDate: "31.10.2022",
+//     imageUrl: "https://via.placeholder.com/300",
+//   },
+// ];
+
+// const CourseCard = ({ course }) => (
+//   <div className="relative flex-1 min-w-[300px] max-w-[32%] bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-105 group">
+//     <a href="#" className="block p-6 relative overflow-hidden">
+//       <div className="absolute inset-0 bg-cover bg-center opacity-100" style={{ backgroundImage: `url(${course.imageUrl})` }}></div>
+//       <img src={course.imageUrl} alt={course.title} className="w-full h-40 object-cover rounded-t-2xl" />
+      
+//       {/* Yellow Circle Animation */}
+//       <div className="absolute top-0 right-0 h-32 w-32 bg-yellow-500 rounded-full transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 group-hover:scale-[10] z-0"></div>
+
+//       {/* Hidden Text */}
+//       <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 transform translate-y-8 transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 z-10">
+//         <div>
+//           <div className="font-bold text-lg mb-4 text-white">{course.title}</div>
+//           {course.startDate && (
+//             <div className="text-sm text-white">
+//               Start: <span className="font-bold text-yellow-400">{course.startDate}</span>
+//             </div>
+//           )}
+//         </div>
+//       </div>
+
+//       {/*  (Initially Hidden) */}
+//       <div className="absolute inset-0 flex items-center justify-center text-center opacity-100 transform translate-y-0 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-8 z-0">
+//         <div className="text-lg font-semibold text-gray-500"></div>
+//       </div>
+//     </a>
+//   </div>
+// );
+
+// const Events = () => (
+//   <div className="w-full max-w-5xl mx-auto bg-black p-6">
+//     <div className="flex flex-wrap justify-center gap-6 py-12">
+//       <div className="w-full text-center mb-12">
+//         <h2 className="text-3xl font-bold text-white">Events</h2>
+//       </div>
+//       {events.map((course, index) => (
+//         <CourseCard key={index} course={course} />
+//       ))}
+
+//       <div className="w-full text-center my-12">
+//         <h2 className="text-3xl font-bold text-white">Speaker Sessions</h2>
+//       </div>
+//       {speakerSessions.map((course, index) => (
+//         <CourseCard key={index} course={course} />
+//       ))}
+
+//       <div className="w-full text-center my-12">
+//         <h2 className="text-3xl font-bold text-white">Competitions</h2>
+//       </div>
+//       {competitions.map((course, index) => (
+//         <CourseCard key={index} course={course} />
+//       ))}
+//     </div>
+//   </div>
+// );
+
+// export default Events;
+
+
+
+import React from "react";
+import ParticleBackground from '../Components/Particle';
+import { ThemeContext } from '../contexts/theme';
+import {motion} from  'framer-motion';
+import { fadeIn, StaggeredfadeIn } from "../Components/fadeInAnimation";
+
+
+
+const upcomingEvents = [
+  {
+    title: "UI/Web & Graph design for teenagers 11-17 years old",
+    startDate: "04.11.2022",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
+  },
+  {
+    title: "UX/UI Web-Design + Mobile Design",
+    startDate: "04.11.2022",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340104/TreasureHunt_yyhcbr.jpg",
+  },
+];
+
+const speakerSessions = [
+  {
+    title: "Annual package 'Product+UX/UI+Graph designer 2022'",
+    startDate: "04.11.2022",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/SpeakerSession_usmppk.jpg",
+  },
+  
+];
+
+const pastEvent = [
+  {
+    title: "Digital Marketing",
+    startDate: null,
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/QuizCompetation_qyndfa.jpg",
+  },
+  {
+    title: "Interior Design",
+    startDate: "31.10.2022",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/GD_kaajws.jpg",
+  },
+  {
+    title: "Graphic Design",
+    startDate: "04.11.2022",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340102/Competition2_h6pnre.jpg",
+  },
+  
+  {
+    title: "Digital Marketing",
+    startDate: null,
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/Competition_poukrf.jpg",
+  },
+  
+];
+
+const CourseCard = ({ course ,index}) => (
+
+  
+  <motion.div className="relative flex-1 min-w-[300px] max-w-[39%] bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg group h-[400px]  "
+  variants={StaggeredfadeIn}
+      initial='initial'
+      whileInView='animate'
+      viewport={{
+        once:true,
+      }}
+      custom={index}
+      > {/* Increased card height */}
+    <a href="#" className="block p-6 relative overflow-hidden h-full"> {/* Set height for the card content */}
+      
+      {/* Image used as background without cropping */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-100 z-0" 
+        style={{ backgroundImage: `url(${course.imageUrl})`, objectFit: 'cover' }}
+      ></div>
+
+      <div className="w-full h-full relative z-10">
+        <img 
+          src={course.imageUrl} 
+          alt={course.title} 
+          className="w-full h-full object-cover rounded-t-2xl opacity-0"
+        />
+      </div>
+
+      {/* Yellow Circle Animation */}
+      <div className="absolute top-0 right-0 h-32 w-32 bg-gradient-to-r from-[#2E3192] to-[#1BFFFF] rounded-full transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 group-hover:scale-[10] z-0"></div>
+
+      {/* Hidden Text */}
+      <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 transform translate-y-8 transition-all duration-100 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 z-10">
+        <div>
+          <div className="font-bold text-lg mb-4 text-white">{course.title}</div>
+          {course.startDate && (
+            <div className="text-sm text-white">
+              Start: <span className="font-bold text-yellow-400">{course.startDate}</span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Dummy Title (Initially Hidden) */}
+      <div className="absolute inset-0 flex items-center justify-center text-center opacity-100 transform translate-y-0 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-8 z-0">
+        <div className="text-lg font-semibold text-gray-500"></div>
+      </div>
+    </a>
+  </motion.div>
+);
+
+const Events = () => (
+  <div className="w-full max-w-5xl mx-auto  p-6">
+    <div className="flex flex-wrap justify-center gap-6 py-12">
+      <div className="w-full text-center mb-12">
+        <h2 className="text-3xl font-bold ">UpcomingEvents</h2>
+      </div>
+      {upcomingEvents.map((course, index) => (
+        
+        <CourseCard index={index} course={course} />
+      ))}
+
+      <div className="w-full text-center my-12">
+        <h2 className="text-3xl font-bold text-white">Speaker Sessions</h2>
+      </div>
+      {speakerSessions.map((course, index) => (
+        <CourseCard index={index} course={course} />
+      ))}
+
+      <div className="w-full text-center my-12">
+        <h2 className="text-3xl font-bold text-white">PastEvent</h2>
+      </div>
+      {pastEvent.map((course, index) => (
+        <CourseCard index={index} course={course} />
+      ))}
+    </div>
+  </div>
+);
+
+export default Events;
+
+

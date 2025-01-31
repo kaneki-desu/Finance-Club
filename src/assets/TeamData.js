@@ -25,7 +25,7 @@ export const data = [
   },
   {
     name: "Anshu Jaiswal",
-    imageUrl: "https://i.imghippo.com/files/xUiED1728924846.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738345362/Anshu_d1dvhe.jpg",
     position: "Technical Head",
     facebook: "https://www.facebook.com/anshu.jaiswal",
     instagram: "https://www.instagram.com/anshu.jaiswal",
