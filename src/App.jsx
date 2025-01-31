@@ -14,12 +14,10 @@ import Team from './pages/Team';
 
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
- Priyanshu
 // import Blog from './pages/Blog';
 
 // import Blog from './pages/Blog';
 import Footer from './Components/Footer';
- main
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark');
