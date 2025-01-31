@@ -27,6 +27,7 @@
   box-shadow: 0 0 18px #3336;
   transition: 0.6s;
   margin: 0 25px;
+  
   margin-bottom: 30px; /* Added margin-bottom to create space between profile and the toggle */
   z-index: 500; /* Profile cards should be below the navbar */
 }
