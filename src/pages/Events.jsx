@@ -370,7 +370,7 @@ import { fadeIn, StaggeredfadeIn } from "../Components/fadeInAnimation";
 
 const upcomingEvents = [
   {
-    title: "UI/Web & Graph design for teenagers 11-17 years old",
+    title: "Join Arthniti for finance events—Treasure Hunt, Quiz, and Discussions. Sharpen skills and claim your treasure!",
     startDate: "04.11.2022",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
   },

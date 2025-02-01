@@ -645,8 +645,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../contexts/theme';
 import TeamCard from '../Components/TeamCard';
 import { data } from '../assets/TeamData';
-import BlackBg from '../images/black-bg.jpeg';
-import LightBg from '../images/images2.jpg';
 import ParticleBackground from '../Components/Particle';
 import {motion} from  'framer-motion';
 import { fadeIn, StaggeredfadeIn } from '../Components/fadeInAnimation';
