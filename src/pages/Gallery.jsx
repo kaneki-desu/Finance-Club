@@ -9,7 +9,7 @@ const Gallery = () => {
           className: "md:col-span-2 md:row-span-2",
         },
         {
-          title: "Valley of Life",
+          title: "Group Discussion",
           src: "https://res.cloudinary.com/duqavhkag/image/upload/v1738393192/IMG-20250131-WA0025_knol2h.jpg",
           className: "md:col-span-2",
         },
@@ -18,26 +18,26 @@ const Gallery = () => {
           src: "https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg",
         },
         {
-          title: "Speech",
+          title: "Quiz",
           src: "https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg",
         },
         {
-          title: "Camping is for Pros",
+          title: "Treasure Hunt",
           src: "https://i.postimg.cc/prDRnry4/Fin-horizontal.jpg",
           className: "md:row-span-2",
         },
         {
-          title: "The Road Not Taken",
+          title: "Quizes",
           src:"https://res.cloudinary.com/duqavhkag/image/upload/v1738393198/IMG-20250131-WA0027_xseyhj.jpg",
           className: "md:col-span-2",
         },
         {
-            title: "Camping is for Pros",
-            src: "https://i.postimg.cc/prDRnry4/Fin-horizontal.jpg",
-            className: "md:row-span-2",
-          },
-        {
           title: "The First Rule",
+          src: "https://i.postimg.cc/prDRnry4/Fin-horizontal.jpg",
+          className: "md:row-span-2",
+        },
+        {
+          title: "Treasure Hunt",
           src: "https://res.cloudinary.com/duqavhkag/image/upload/v1738393197/IMG-20250131-WA0023_xydraf.jpg",
           className: "md:col-span-2",
         },
