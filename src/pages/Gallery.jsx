@@ -14,7 +14,7 @@ const Gallery = () => {
           className: "md:col-span-2",
         },
         {
-          title: "Sala Behta Hi Jayega",
+          title: "Speech",
           src: "https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg",
         },
         {
