@@ -43,7 +43,7 @@ export const data = [
   {
     name: "Prince Kumar",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/Prince_Kumar_mhxkfe.jpg",
-    position: "Fundamental Analyst",
+    position: "Fundamental Analyst Head",
     facebook: "https://www.facebook.com/prince.kumar",
     instagram: "https://www.instagram.com/prince.kumar",
     linkedin: "https://www.linkedin.com/in/prince-kumar",
@@ -51,7 +51,7 @@ export const data = [
   {
     name: "Akhinur Islam",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/Akhinur_Islam_okrrlj.jpg",
-    position: "Technical Analyst",
+    position: "Technical Analyst ",
     facebook: "https://www.facebook.com/akhinur.islam",
     instagram: "https://www.instagram.com/akhinur.islam",
     linkedin: "https://www.linkedin.com/in/akhinur-islam",
@@ -67,7 +67,7 @@ export const data = [
   {
     name: "Priyanshu Tiwari",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738382818/Priyanshu_zcards.jpg",
-    position: "member",
+    position: "Member",
     team: "Developer",
     facebook: "https://m.facebook.com/profile.php?id=61555019462471",
     instagram: "https://www.instagram.com/priyanshutiwari7405/",
@@ -77,7 +77,7 @@ export const data = [
   {
     name: "Sibajit Mazumder ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/IMG-20241215-WA0015_-_Sicksib_1_juqowo.jpg",
-    position: "member",
+    position: "Member",
     team: "Developer",
     facebook: "https://www.facebook.com/share/1EcVwnC4ez/",
     instagram: "https://www.instagram.com/siibajit_maz.808/profilecard/?igsh=MW5zY21lMm00emkwNg==",
@@ -87,7 +87,7 @@ export const data = [
   {
     name: "Tahmid Choudhury",
     imageUrl: "https://i.imghippo.com/files/ut3744SSU.jpg",
-    position: "member",
+    position: "Member",
     team: "Developer",
     facebook: "https://www.facebook.com/muhsina.muhsina.946954/",
     instagram: "/https://www.instagram.com/tahmid786/",
@@ -98,7 +98,7 @@ export const data = [
   {
     name: "Devashish Gupta",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/IMG_4089_-_Devashish_Gupta_vicf5i.jpg",
-    position: "member",
+    position: "Member",
     team: "Developer",
     facebook: "https://m.facebook.com/hackerDevashish/",
     instagram: "https://www.instagram.com/devashish._._/profilecard/?igsh=b3d4bHE2azExdHUz",
@@ -108,7 +108,7 @@ export const data = [
   {
     name: "Pallavi Kushwaha",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356505/p_image_-_PALLAVI_KUSHWAHA_xngs5g.jpg",
-    position: "member",
+    position: "Member",
     team: "Developer",
     facebook: "https://www.facebook.com/profile.php?id=61571157123462&mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/pallavikushwaha198/profilecard/?igsh=MW1qZzR3dXY4amppaw==",
@@ -120,7 +120,7 @@ export const data = [
   {
     name: "Samir kumar",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356502/IMG-20240928-WA0003_1_-_1002_Samir_kumar_souefw.jpg",
-    position: "member",
+    position: "Member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/profile.php?id=100092724821356",
     instagram: "https://www.instagram.com/s.kumar_201/",
@@ -129,7 +129,7 @@ export const data = [
   {
     name: "Aarnab Hazarika",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356503/IMG-20241009-WA0020_-_Aarnab_Hazarika_qwxtss.jpg",
-    position: "member",
+    position: "Member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/share/kqUXHryRzrJYMx78/",
     instagram: "https://www.instagram.com/aar_nab/profilecard/?igsh=MTdlNnhvdGsyMnNvdA==",
@@ -138,7 +138,7 @@ export const data = [
   {
     name: "Leena Mahaseth ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/20241217_142739_-_Leena_Mahaseth_lstg0p.jpg",
-    position: "member",
+    position: "Member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/leena.mahaseth",
     instagram: "https://www.instagram.com/aar_nab/profilecard/?igsh=MTdlNnhvdGsyMnNvdA==",
@@ -147,7 +147,7 @@ export const data = [
   {
     name: "Rajnish Kumar",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/IMG_20241217_222542_673_-_Rajnish_Kumar_kke39m.webp",
-    position: "member",
+    position: "Member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/profile.php?id=100043628552432",
     instagram: "https://www.instagram.com/saniyaparveen_0212/profilecard/?igsh=MzUxZXBhMGx3Y2lt",
@@ -156,7 +156,7 @@ export const data = [
   {
     name: "Saniya Parveen ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356501/DocScanner_Dec_18_2024_2-11_PM-1_180049435537184_-_Tasmiya_Parveen_ssaiqt.jpg",
-    position: "member",
+    position: "Member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/profile.php?id=61551234719256",
     instagram: "https://www.instagram.com/saniyaparveen_0212/profilecard/?igsh=MzUxZXBhMGx3Y2lt",
@@ -165,7 +165,7 @@ export const data = [
   {
     name: "Vadde Thrishank ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/IMG_20241217_195830_-_vadde_thrishank_ibtzr5.jpg",
-    position: "member",
+    position: "Member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/profile.php?id=61550771336346&mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/vikrant_017/profilecard/?igsh=MWV3aXQ1b3JkZHdjdA==",
@@ -174,7 +174,7 @@ export const data = [
   {
     name: "Vikrant Agarwala",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356504/InShot_20241105_210540445_-_Vikrant_Agarwala_qqyhjo.jpg",
-    position: "member",
+    position: "Member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/vikrant017?mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/vikrant_017/profilecard/?igsh=MWV3aXQ1b3JkZHdjdA==",
@@ -183,7 +183,7 @@ export const data = [
   {
     name: "Aditya Ranjan ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356503/IMG_20241103_145130_1_-_ME_078_Aditya_Ranjan_kb1qri.jpg",
-    position: "member",
+    position: "Member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/profile.php?id=61555732546762&mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/aditya_ranjan89/profilecard/?igsh=MTZuNGpsMTk1bWF2dA==",
@@ -192,7 +192,7 @@ export const data = [
   {
     name: "Lakshya Ujjwal",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356506/WhatsApp_Image_2024-12-16_at_16.14.20_27c6b203_-_Alok_A124_xirinr.jpg",
-    position: "member",
+    position: "Member",
     team: "PR and Marketing",
     facebook: "",
     instagram: "https://www.instagram.com/lakshya_ug/",
@@ -201,7 +201,7 @@ export const data = [
   {
     name: "Sahil Raj ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356502/IMG20241209153403_-_sahil_raj_1_vq0lu6.jpg",
-    position: "member",
+    position: "Member",
     team: "Junior Technical Analyst",
     facebook: "https://www.facebook.com/profile.php?id=61550635785749&mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/_sahilrajjaquar_?igsh=cnNocHBlenp6dWxz",
@@ -210,7 +210,7 @@ export const data = [
   {
     name: "Arnab Lahkar ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356503/IMG_20241217_143414_067_-_Arnab_Lahkar_vaqgsb.jpg",
-    position: "member",
+    position: "Member",
     team: "Junior Technical Analyst",
     facebook: "https://www.facebook.com/profile.php?id=61550521807836&mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/lahkararnab/profilecard/?igsh=am1tbzlkeHhoNzhr",
@@ -219,7 +219,7 @@ export const data = [
   {
     name: "Abhinav Singh",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/20241106_104218_-_Abhinav_Singh_k6rcr2.jpg",
-    position: "member",
+    position: "Member",
     team: "Junior Technical Analyst",
     facebook: "https://www.facebook.com/share/19ET4Zhj7J/",
     instagram: "https://www.instagram.com/abhinav_xingh/profilecard/?igsh=MWUzdGJwaHJpa3hu",
@@ -228,7 +228,7 @@ export const data = [
   {
     name: "Rohan Tiwari Kumar",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356505/Screenshot_2024-12-17-15-05-07-046_com.whatsapp_-_Rohan_Tiwari_ggxmvh.jpg",
-    position: "member",
+    position: "Member",
     team: "Junior Technical Analyst",
     facebook: "https://www.facebook.com/share/14z8fYYRfS/?mibextid=wwXIfr",
     instagram: "https://www.instagram.com/_rohan_264?igsh=MWl5MGNnZDk5MWN3OQ==",
@@ -238,7 +238,7 @@ export const data = [
   {
     name: "Ronit Raj",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/20240926_191630_-_RONIT_RAJ_zki9e7.jpg",
-    position: "member",
+    position: "Member",
     team: "Content",
     facebook: "https://www.facebook.com/profile.php?id=61555882343317",
     instagram: "https://www.instagram.com/ro.nits?igsh=MXRreWphN2U0ejNsbw==",
@@ -249,7 +249,7 @@ export const data = [
   {
     name: "Abhinay Kumar Yadav ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356502/IMG_20240926_161917841_-_Abhinay_Kumar_mohuts.jpg",
-    position: "member",
+    position: "Member",
     team: "Design",
     facebook: "https://www.facebook.com/share/1AzFiQgnvq/",
     instagram: "https://www.instagram.com/abhinay_1307/profilecard/?igsh=MTEzZGxpeGJtZWZnYg==",
@@ -258,7 +258,7 @@ export const data = [
   {
     name: "Dayal Mahatoo ",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/IMG-20241105-WA0009_-_DAYAL_nr0omf.jpg",
-    position: "member",
+    position: "Member",
     team: "Design",
     facebook: "https://www.facebook.com/share/FUogE7JUqhM2QgzG/",
     instagram: "https://www.instagram.com/_d_mahatoo?igsh=MXYzZHNmeW5lcXQ2",
