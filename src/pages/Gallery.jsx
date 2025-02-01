@@ -10,8 +10,12 @@ const Gallery = () => {
         },
         {
           title: "Valley of Life",
-          src: "https://i.postimg.cc/prDRnry4/Fin-horizontal.jpg",
+          src: "https://res.cloudinary.com/duqavhkag/image/upload/v1738393192/IMG-20250131-WA0025_knol2h.jpg",
           className: "md:col-span-2",
+        },
+        {
+          title: "Speech",
+          src: "https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg",
         },
         {
           title: "Speech",
@@ -24,12 +28,17 @@ const Gallery = () => {
         },
         {
           title: "The Road Not Taken",
-          src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          src:"https://res.cloudinary.com/duqavhkag/image/upload/v1738393198/IMG-20250131-WA0027_xseyhj.jpg",
           className: "md:col-span-2",
         },
         {
+            title: "Camping is for Pros",
+            src: "https://i.postimg.cc/prDRnry4/Fin-horizontal.jpg",
+            className: "md:row-span-2",
+          },
+        {
           title: "The First Rule",
-          src: "https://assets.aceternity.com/the-first-rule.png",
+          src: "https://res.cloudinary.com/duqavhkag/image/upload/v1738393197/IMG-20250131-WA0023_xydraf.jpg",
           className: "md:col-span-2",
         },
       ]
