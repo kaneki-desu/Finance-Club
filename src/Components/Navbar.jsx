@@ -68,6 +68,7 @@ function Navbar() {
         </section>
         <ul className='flex gap-6 text-2xl'>
         <Link to="/" className='NavUnderline'>Home</Link>
+        <Link to="/Gallery" className='NavUnderline'>Gallery</Link>
         <Link to="/events" className='NavUnderline'>Events</Link>
         {/* <Link to="/sponser" className='NavUnderline'>Sponser</Link> */}
         <Link to="/blog" className='NavUnderline'>Blog</Link>
@@ -122,6 +123,7 @@ function Navbar() {
             <div ><X size={52}/></div>
           </div>
             <Link to="/" className='NavUnderline ' onClick={toggleMenu}>Home</Link>
+            <Link to="/gallery" className='NavUnderline' onClick={toggleMenu}>Gallery</Link>
             <Link to="/events" className='NavUnderline' onClick={toggleMenu}>Events</Link>
             <Link to="/blog" className='NavUnderline' onClick={toggleMenu}>Blog</Link>
             <Link to="/team" className='NavUnderline' onClick={toggleMenu}>Team</Link>

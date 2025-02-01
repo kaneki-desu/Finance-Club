@@ -4,7 +4,6 @@ import TimelineObserver from "react-timeline-animation";
 
 import "../css/Timeline.css";
 import Quotes from "./Quotes";
-import { thead } from "framer-motion/client";
 import { ThemeContext } from "../contexts/theme";
 
 
