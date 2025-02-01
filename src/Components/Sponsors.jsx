@@ -3,15 +3,14 @@ import { useEffect, useState } from "react";
 import { fadeIn, StaggeredfadeIn } from "./fadeInAnimation";
 
 const sponsors = [
-  "https://i.postimg.cc/vmqwFxSL/Sec-Services.jpg",
   "https://www.stockgro.club/_next/image/?url=%2Fstatic%2FstockgroBlack.png&w=256&q=75",
+  "https://i.postimg.cc/vmqwFxSL/Sec-Services.jpg",
   "https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/svg/unstop-logo.svg",
 
 ];
 
 export default function SponsorsMarquee() {
   const [isShining, setIsShining] = useState(false);
-  console.log(sponsors.length)
 
   useEffect(() => {
     const interval = setInterval(() => {

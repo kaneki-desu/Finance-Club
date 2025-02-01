@@ -86,7 +86,7 @@ export const data = [
   },
   {
     name: "Tahmid Choudhury",
-    imageUrl: "https://i.imghippo.com/files/ut3744SSU.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738394295/IMG-20250201-WA0009_aja02j.jpg",
     position: "Member",
     team: "Developer",
     facebook: "https://www.facebook.com/muhsina.muhsina.946954/",
@@ -125,6 +125,21 @@ export const data = [
     facebook: "https://www.facebook.com/profile.php?id=100092724821356",
     instagram: "https://www.instagram.com/s.kumar_201/",
     linkedin: "https://www.linkedin.com/in/samir-kumar-b07704281/",
+  },
+  {
+    name: "Rahul Pandey",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738394054/IMG-20250201-WA0007_tt4gnq.jpg",
+    position: "Member",
+    team: "PR and Marketing",
+    facebook: "https://www.facebook.com/share/1D37CtSz2H/",
+    instagram: "https://www.instagram.com/theonly_rahul_78?igsh=MXU1M2x3cHh0bDd3eQ==&utm_source=ig_contact_invite",
+    linkedin: "https://www.linkedin.com/in/rahul-pandit-458941296",
+  },
+  {
+    name: "Tejas Pandey",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738395194/IMG-20250201-WA0010_rvus8f.jpg",
+    position: "Member",
+    team: "PR and Marketing",
   },
   {
     name: "Aarnab Hazarika",

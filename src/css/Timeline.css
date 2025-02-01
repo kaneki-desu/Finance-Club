@@ -14,7 +14,7 @@
     background-color: #eae4e400;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     .wrapper{
       display: flex;
       justify-content: center;

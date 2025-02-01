@@ -21,7 +21,7 @@ const Blog2 = () => {
           return (
             <motion.div
               key={index}
-              className={`card justify-center h-fit pc:w-[33vw] flex flex-col mobile:w-72 p-10 `}
+              className={`card justify-center h-fit pc:w-[33vw] flex flex-col mobile:w-72 p-10 ${themeMode===`dark`?`bg-[#18181B]`:`bg-[#FAFAFA]`} `}
               variants={fadeIn}
               initial="initial"
               whileInView="animate"

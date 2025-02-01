@@ -4,7 +4,6 @@ import TimelineObserver from "react-timeline-animation";
 
 import "../css/Timeline.css";
 import Quotes from "./Quotes";
-import { thead } from "framer-motion/client";
 import { ThemeContext } from "../contexts/theme";
 
 
@@ -91,7 +90,7 @@ export default function TimelineStep() {
   return (
     <div className="pc:h-96" >
       {/* <h1>react-scroll-animation component</h1> */}
-      <div className={`  mobile:absolute mobile:hidden stub1 ` }>.<p className="pc:absolute pc:hidden"> Quotes of the day. </p></div>
+      <div className={`  mobile:absolute mobile:hidden stub1 text-black` }>.<p className="pc:absolute pc:hidden"> Quotes of the day. </p></div>
       <div className={`  pc:absolute pc:hidden Mstub1 ` }><p> Quotes of the day</p></div>
       <TimelineObserver
         initialColor="#ff05057e"

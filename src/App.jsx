@@ -21,6 +21,7 @@ import Blog from './pages/Blog';
 import Footer from './Components/Footer';
 import LoadingScreen from './Components/LoadingScreen';
 import AnimatedWrapper from './Components/AnimatedWrapper';
+import Gallery from './pages/Gallery';
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark');
@@ -45,6 +46,7 @@ function App() {
           {/* <Route path="/sponser" element={<Sponser />} /> */}
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<Blog2 />} />
         </Routes>
       </Router>

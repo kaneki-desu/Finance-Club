@@ -68,9 +68,11 @@ const AbtCard = () => {
         
         className="topology pl-16 pr-2  flex flex-col text-left gap-5 mobile:text-center mobile:pl-4 mobile:pr-4 ">
             <div className="text-5xl ">About Us</div>
-            <div className="para text-xl">The Finance & Investment Club, NIT Silchar is a platform for students to explore and learn the world of finance and investment. We organize beginner-friendly sessions, workshops, and talks from industry experts and alumni, creating a collaborative environment for all finance enthusiasts, regardless of prior experience.</div>
+            <div className="para text-xl/9 tracking-wider ">
+            The Finance & Investment Club, NIT Silchar is a platform for students to explore and learn the world of finance and investment. We organize beginner-friendly sessions, workshops, and talks from industry experts and alumni, creating a collaborative environment for all finance enthusiasts, regardless of prior experience. Our mission is to foster financial literacy and provide hands-on opportunities to gain real-world knowledge, equipping students with the skills to make informed financial decisions.
+              </div>
             {/* You have to make reactive component with the user,position: absolute(wrap it under a relative component so the place reamins the same) then use zindex>> than zIndex of svg */}
-            <div className="relative">
+            {/* <div className="relative ">
             <motion.button
              variants={fadeINAnimationVariants}
              initial={{opacity:0}}
@@ -80,9 +82,9 @@ const AbtCard = () => {
               }}
               custom={20}
               
-              className={`${themeMode=='dark'? "button-54-dark":"button-54"}  w-48 absolute mt-5 mobile:relative z-10`} role="button">Know More
+              className={`${themeMode=='dark'? "button-54-dark":"button-54"}  w-48 absolute z-[50] mt-5 mobile:relative `} role="button" onClick={()=>console.log("hi")}>Know More
             </motion.button>
-              </div>
+              </div> */}
 
         </motion.div>
         <div className="threeImgSet p-10 pt-0 flex flex-col gap-10 mobile:gap-20 mobile:pb-28">
@@ -109,7 +111,7 @@ const AbtCard = () => {
         custom={20}
         className="abtpic w-full flex justify-start">
         {/* <div className='imgsample'></div> */}
-        <img src={images[1]} alt="" className='rounded-lg h-52 scale-150 ml-5 mobile:ml-0 object-cover object-center ' />
+        <img src={images[1]} alt="" className='rounded-lg h-52 ml-5 mobile:ml-0 object-cover object-center ' />
         </motion.div>
         <motion.div
         variants={fadeINAnimationVariants}
@@ -121,7 +123,7 @@ const AbtCard = () => {
         custom={20}
         className="abtpic w-full flex justify-end">
         {/* <div className='imgsample'></div> */}
-        <img src={images[2]} alt="" className='rounded-lg h-52 scale-125  ml-5 mobile:ml-0 object-cover object-center ' />
+        <img src={images[2]} alt="" className='rounded-lg h-52   ml-5 mobile:ml-0 object-cover object-center ' />
         </motion.div>
            </div>
     </motion.div>

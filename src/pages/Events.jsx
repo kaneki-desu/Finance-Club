@@ -446,10 +446,10 @@ const CourseCard = ({ course ,index}) => (
       </div>
 
       {/* Yellow Circle Animation */}
-      <div className="absolute top-0 right-0 h-32 w-32 bg-gradient-to-r from-[#2E3192] to-[#1BFFFF] rounded-full  transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 duration-10000 group-hover:scale-[10] z-0"></div>
+      <div className="absolute top-0 right-0 h-32 w-32 bg-gradient-to-r from-[#2E3192] to-[#1BFFFF] rounded-full  transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 duration-[750ms] group-hover:scale-[10] z-0"></div>
 
       {/* Hidden Text */}
-      <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 transform translate-y-8 transition-all duration-100 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 z-10 ">
+      <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 transform translate-y-8 transition-all duration-1000 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 z-10 ">
         <div>
           <div className="font-bold text-lg mb-4 text-white">{course.title}</div>
           {course.startDate && (
