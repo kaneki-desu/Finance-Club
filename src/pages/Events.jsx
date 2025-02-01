@@ -370,7 +370,7 @@ import { fadeIn, StaggeredfadeIn } from "../Components/fadeInAnimation";
 
 const upcomingEvents = [
   {
-    title: "UI/Web & Graph design for teenagers 11-17 years old",
+    title: "Join Arthniti for finance events—Treasure Hunt, Quiz, and Discussions. Sharpen skills and claim your treasure!",
     startDate: "04.11.2022",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
   },
@@ -418,7 +418,7 @@ const pastEvent = [
 const CourseCard = ({ course ,index}) => (
 
   
-  <motion.div className="relative flex-1 min-w-[300px] max-w-[39%] bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg group h-[400px]  "
+  <motion.div className="relative flex-1 min-w-[300px] max-w-[40%] bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg group h-[440px] mx-auto  "
   variants={StaggeredfadeIn}
       initial='initial'
       whileInView='animate'
@@ -427,7 +427,7 @@ const CourseCard = ({ course ,index}) => (
       }}
       custom={index}
       > {/* Increased card height */}
-    <a href="#" className="block p-6 relative overflow-hidden h-full"> {/* Set height for the card content */}
+    <a href="#" className="block p-6 relative overflow-hidden h-full "> {/* Set height for the card content */}
       
       {/* Image used as background without cropping */}
       <div 
@@ -435,7 +435,9 @@ const CourseCard = ({ course ,index}) => (
         style={{ backgroundImage: `url(${course.imageUrl})`, objectFit: 'cover' }}
       ></div>
 
-      <div className="w-full h-full relative z-10">
+ <ParticleBackground id='particle'/>
+
+      <div className="w-full h-full relative z-10 ">
         <img 
           src={course.imageUrl} 
           alt={course.title} 
@@ -444,10 +446,10 @@ const CourseCard = ({ course ,index}) => (
       </div>
 
       {/* Yellow Circle Animation */}
-      <div className="absolute top-0 right-0 h-32 w-32 bg-gradient-to-r from-[#2E3192] to-[#1BFFFF] rounded-full transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 group-hover:scale-[10] z-0"></div>
+      <div className="absolute top-0 right-0 h-32 w-32 bg-gradient-to-r from-[#2E3192] to-[#1BFFFF] rounded-full  transform translate-x-1/2 -translate-y-1/2 transition-transform scale-100 duration-10000 group-hover:scale-[10] z-0"></div>
 
       {/* Hidden Text */}
-      <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 transform translate-y-8 transition-all duration-100 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 z-10">
+      <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 transform translate-y-8 transition-all duration-100 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 z-10 ">
         <div>
           <div className="font-bold text-lg mb-4 text-white">{course.title}</div>
           {course.startDate && (
@@ -459,7 +461,7 @@ const CourseCard = ({ course ,index}) => (
       </div>
 
       {/* Dummy Title (Initially Hidden) */}
-      <div className="absolute inset-0 flex items-center justify-center text-center opacity-100 transform translate-y-0 transition-all duration-500 ease-in-out group-hover:opacity-0 group-hover:translate-y-8 z-0">
+      <div className="absolute inset-0 flex items-center justify-center text-center opacity-100 transform translate-y-0 transition-all duration-1000 ease-in-out group-hover:opacity-0 group-hover:translate-y-8 z-0">
         <div className="text-lg font-semibold text-gray-500"></div>
       </div>
     </a>
