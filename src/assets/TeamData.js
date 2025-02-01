@@ -66,7 +66,7 @@ export const data = [
 
   {
     name: "Priyanshu Tiwari",
-    imageUrl: "https://i.imghippo.com/files/SY3614a.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738382818/Priyanshu_zcards.jpg",
     position: "member",
     team: "Developer",
     facebook: "https://m.facebook.com/profile.php?id=61555019462471",
