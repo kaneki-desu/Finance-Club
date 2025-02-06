@@ -6,14 +6,16 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ThemeContext } from '../contexts/theme';
 import { motion,animate, delay } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import withAnimation from './WithAnimation';
 gsap.registerPlugin(ScrollTrigger);
 
 // import '../css/button.css'
 const fadeINAnimationVariants={
-  initial:{opacity:0,y:50},
+  initial:{opacity:0,y:50,filter:"blur(10px)"},
   animate:(index)=>{
     return {
-      opacity:1,y:0,x:0,
+      opacity:1,y:0,x:0,filter:"blur(0px)",
       transition:{
         duration:1,
         delay:0.05 * index,
@@ -22,7 +24,11 @@ const fadeINAnimationVariants={
   }
 }
 const AbtCard = () => {
-    
+  const images=["https://i.postimg.cc/X7bV6fzb/Fin-farewell.jpg"
+                      ,"https://i.postimg.cc/prDRnry4/Fin-horizontal.jpg"
+                      ,"https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg"
+                      ,"https://i.postimg.cc/CMDF2PJ7/Fin-Orientation.jpg"
+                    ]
       const {themeMode}=useContext(ThemeContext)
     useEffect(()=>{
 
@@ -57,25 +63,32 @@ const AbtCard = () => {
       once:true,
     }}
     custom={1}
-    className='grid w-full grid-cols-2 z-10 '>
+    className='grid w-full grid-cols-2  mobile:flex-col mobile:flex mobile:gap-20'>
         <motion.div 
         
-        className="topology pl-16 pr-2 flex flex-col text-left gap-5">
-            <div className="text-5xl pl-6">About Us</div>
-            <div className="para text-xl">The Finance & Investment Club, NIT Silchar is a platform for students to explore and learn the world of finance and investment. We organize beginner-friendly sessions, workshops, and talks from industry experts and alumni, creating a collaborative environment for all finance enthusiasts, regardless of prior experience.</div>
+        className="topology pl-16 pr-2  flex flex-col text-left gap-5 mobile:text-center mobile:pl-4 mobile:pr-4 ">
+            <div className="text-5xl ">About Us</div>
+            <div className="para text-xl/9 tracking-wider ">
+            The Finance & Investment Club, NIT Silchar is a platform for students to explore and learn the world of finance and investment. We organize beginner-friendly sessions, workshops, and talks from industry experts and alumni, creating a collaborative environment for all finance enthusiasts, regardless of prior experience. Our mission is to foster financial literacy and provide hands-on opportunities to gain real-world knowledge, equipping students with the skills to make informed financial decisions.
+              </div>
+            {/* You have to make reactive component with the user,position: absolute(wrap it under a relative component so the place reamins the same) then use zindex>> than zIndex of svg */}
+            {/* <div className="relative ">
             <motion.button
              variants={fadeINAnimationVariants}
              initial={{opacity:0}}
              whileInView="animate"
              viewport={{
                once:true,
-             }}
-            custom={40}
-
-             className="button-54 w-48" role="button">Know More
+              }}
+              custom={20}
+              
+              className={`${themeMode=='dark'? "button-54-dark":"button-54"}  w-48 absolute z-[50] mt-5 mobile:relative `} role="button" onClick={()=>console.log("hi")}>Know More
             </motion.button>
+              </div> */}
 
-    </motion.div>
+        </motion.div>
+        <div className="threeImgSet p-10 pt-0 flex flex-col gap-10 mobile:gap-20 mobile:pb-28">
+
         <motion.div
         variants={fadeINAnimationVariants}
         initial={{opacity:0,x:50}}
@@ -84,15 +97,40 @@ const AbtCard = () => {
           once:true,
         }}
         custom={20}
-         className="abtpic ">
+        className="abtpic w-full flex justify-end">
         {/* <div className='imgsample'></div> */}
-        <img src={demoImg} alt="" className='ml-5 object-cover object-center h-5/6' />
+        <img src={images[0]} alt="" className='rounded-lg h-52  ml-5 mobile:ml-0 object-fill  object-center ' />
         </motion.div>
+        <motion.div
+        variants={fadeINAnimationVariants}
+        initial={{opacity:0,x:-50}}
+        whileInView="animate"
+        viewport={{
+          once:true,
+        }}
+        custom={20}
+        className="abtpic w-full flex justify-start">
+        {/* <div className='imgsample'></div> */}
+        <img src={images[1]} alt="" className='rounded-lg h-52 ml-5 mobile:ml-0 object-cover object-center ' />
+        </motion.div>
+        <motion.div
+        variants={fadeINAnimationVariants}
+        initial={{opacity:0,x:50}}
+        whileInView="animate"
+        viewport={{
+          once:true,
+        }}
+        custom={20}
+        className="abtpic w-full flex justify-end">
+        {/* <div className='imgsample'></div> */}
+        <img src={images[2]} alt="" className='rounded-lg h-52   ml-5 mobile:ml-0 object-cover object-center ' />
+        </motion.div>
+           </div>
     </motion.div>
-    <div className="svg-container  -mt-10 absolute top-0 left-0 object-contain " style={{height:"2447px"}}>
+    <div className="svg-container mobile:hidden -mt-10 absolute top-0 left-0 object-contain " style={{height:"2447px"}}>
     <svg 
     id='linebg'
-    className='w-screen h-full'
+    className='w-screen h-full z-0'
     viewBox="0 0 1400 2447"
     preserveAspectRatio="none"
     fill="none"
@@ -107,8 +145,8 @@ const AbtCard = () => {
 <stop offset="1"/>
 </>):(<>
   <stop stop-color="#000"/>
-<stop offset="0.57" stop-color="#808080"/>
-<stop offset="0.571" stop-color="#BFBFBF"/>
+{/* <stop offset="0.57" stop-color="#808080"/>
+<stop offset="0.73" stop-color="#BFBFBF"/> */}
 <stop offset="1" stop-color="#f4f3f3"/>
 </>)}
 </linearGradient>
@@ -121,4 +159,4 @@ const AbtCard = () => {
   )
 }
 
-export default AbtCard
+export default withAnimation(AbtCard)

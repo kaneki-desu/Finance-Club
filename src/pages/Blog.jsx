@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import blogData from '../assets/blog.json';
+import Blogdata from '../Data/Blogdata';
 import useTheme from '../contexts/theme';
+import BlogCard from '../Components/BlogCard';
 import ParticlesComponent from '../Components/Particle';
 
 const Blog = () => {
   const { themeMode } = useTheme(); 
-  const [data, setData] = useState(blogData); 
+  const [data, setData] = useState(Blogdata); 
   const [expandedPostId, setExpandedPostId] = useState(null); 
 
   const handleReadMoreClick = (id) => {
@@ -27,8 +28,8 @@ const Blog = () => {
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Blogs</h2>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-          {data.length > 0 ? (
-            data.map((blog) => (
+          {Blogdata.length > 0 ? (
+            Blogdata.map((blog) => (
               <div
                 key={blog._id}
                 className={`flex flex-col overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ${
@@ -107,3 +108,4 @@ const Blog = () => {
 };
 
 export default Blog;
+

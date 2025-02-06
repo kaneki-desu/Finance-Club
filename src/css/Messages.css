@@ -1,0 +1,27 @@
+.messageBox{
+    /* From https://css.glass */
+    background: url(../images/piggy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.messageBox p{
+    color:white;
+    /* text-shadow: 1px 1px 0px var(--text-primary); */
+}
+.glassMorphD{/* From https://css.glass */
+    /* From https://css.glass */
+background: linear-gradient(135deg,var(--background),rgba(125, 13, 13, 0.2),rgba(2, 105, 2, 0.2),var(--background));
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.1px);
+-webkit-backdrop-filter: blur(4.1px);
+border: 1px solid rgba(255, 255, 255, 0.28);
+}
+.glassMorphL{/* From https://css.glass */
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 16px;
+    box-shadow: -10px 24px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(0, 0, 0, 0.46);
+}

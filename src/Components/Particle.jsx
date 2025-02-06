@@ -7,9 +7,7 @@ import { ThemeContext } from '../contexts/theme';
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
-import { IndianRupee } from "lucide-react";
-import { Bitcoin } from "lucide-react";
-import bitcoin from "../assets/bitcoin.png"
+
 const ParticlesComponent = (props) => {
       const [bgImg,setBgImg]= useState("#000")
       const [colorImg,setcolorImg]= useState("#000")
