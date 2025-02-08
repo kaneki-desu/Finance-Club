@@ -141,7 +141,7 @@ export const data = [
     position: "Member",
     team: "PR and Marketing",
     facebook: "",
-    instagram: "",
+    instagram: "https://www.instagram.com/tejesh_pvtt_?utm_source=qr&igsh=MTl4c29nZ21sNm1uaQ%3D%3D",
     linkedin: "",
   },
   {
