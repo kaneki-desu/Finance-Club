@@ -72,7 +72,7 @@ export const data = [
     facebook: "https://m.facebook.com/profile.php?id=61555019462471",
     instagram: "https://www.instagram.com/priyanshutiwari7405/",
     linkedin: "https://www.linkedin.com/in/priyanshu-tiwari-b91539278/",
-    github: "https://github.com/WebberTiwari" 
+    github: "https://github.com/WebberTiwari1" 
   },
   {
     name: "Sibajit Mazumder ",
@@ -127,7 +127,7 @@ export const data = [
     linkedin: "https://www.linkedin.com/in/samir-kumar-b07704281/",
   },
   {
-    name: "Rahul Pandey",
+    name: "Rahul Pandit",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738394054/IMG-20250201-WA0007_tt4gnq.jpg",
     position: "Member",
     team: "PR and Marketing",
@@ -140,6 +140,9 @@ export const data = [
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738395194/IMG-20250201-WA0010_rvus8f.jpg",
     position: "Member",
     team: "PR and Marketing",
+    facebook: "",
+    instagram: "",
+    linkedin: "",
   },
   {
     name: "Aarnab Hazarika",
@@ -194,6 +197,15 @@ export const data = [
     facebook: "https://www.facebook.com/vikrant017?mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/vikrant_017/profilecard/?igsh=MWV3aXQ1b3JkZHdjdA==",
     linkedin: "https://www.linkedin.com/in/vikrant-agarwala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Bisal Prasad",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738995351/WhatsApp_Image_2025-02-08_at_11.44.02_5047a7de_usf5mb.jpg",
+    position: "Member",
+    team: "Junior Fundamental Analyst",
+    facebook: "https://www.facebook.com/bisalprasad.biki",
+    instagram: "https://www.facebook.com/bisalprasad.biki",
+    linkedin: "https://www.linkedin.com/in/bisal-prasad-bab004282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Aditya Ranjan ",
