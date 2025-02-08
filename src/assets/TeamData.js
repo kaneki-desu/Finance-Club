@@ -200,7 +200,7 @@ export const data = [
   },
   {
     name: "Bisal Prasad",
-    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738995351/WhatsApp_Image_2025-02-08_at_11.44.02_5047a7de_usf5mb.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738995601/WhatsApp_Image_2025-02-08_at_11.44.02_5047a7de_pi6bma.jpg",
     position: "Member",
     team: "Junior Fundamental Analyst",
     facebook: "https://www.facebook.com/bisalprasad.biki",
