@@ -98,6 +98,6 @@ body *{
 }
 #particle{
     position: absolute;
-    z-index: -10;
+    /* z-index: -10; */
     pointer-events: none;
 }

@@ -291,6 +291,16 @@ export const data = [
     instagram: "https://www.instagram.com/_d_mahatoo?igsh=MXYzZHNmeW5lcXQ2",
     linkedin: "https://www.linkedin.com/in/dayal-mahatoo-7a4488241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  {
+    name: "Hritik Raj",
+    imageUrl: "https://i.imghippo.com/files/fQB8187k.jpg",
+    position: "Member",
+    team: "PR and Marketing",
+    facebook: "https://www.facebook.com/share/188fVAFATY/",
+    instagram: "https://www.instagram.com/hritik_shrivastva_4r?igsh=MWhnODZ4cm1pZDFlYQ==",
+    linkedin: "https://www.linkedin.com/in/hritikrajnits?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+ 
  
 ]
   

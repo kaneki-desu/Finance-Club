@@ -1,43 +1,13 @@
 [
   {
     "_id": "1",
-    "title": "The Future of Web Development",
-    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
-    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "category": "Web",
+    "title": "Understanding the financial market",
+    "body": "The financial market is a dynamic ecosystem where individuals, businesses, and governments engage in the exchange of financial instruments like stocks, bonds, currencies, and commodities. It serves as a platform for raising capital, enabling investment, and fostering economic growth. With advancements in technology, markets have become increasingly accessible, offering opportunities for both seasoned investors and beginners. However, navigating the financial market requires knowledge, strategy, and risk management to make informed decisions and achieve financial goals. Whether you're trading stocks or exploring cryptocurrency, understanding the market's fundamentals is the first step toward success.",
+    "image": "https://i.imghippo.com/files/YFHI9506VOk.jpeg",
+    "category": "Finance",
     "author": "Tahmid",
     "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "date":"--/--/2025"
-  },
-  {
-    "_id": "2",
-    "title": "The Future of Web Development",
-    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
-    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "category": "Web",
-    "author": "Tahmid",
-    "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "date":"--/--/2025"
-  },
-  {
-    "_id": "3",
-    "title": "The Future of Web Development",
-    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
-    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "category": "Web",
-    "author": "Tahmid",
-    "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "date":"--/--/2025"
-  },
-  {
-    "_id": "4",
-    "title": "The Future of Web Development",
-    "body": "Web development has come a long way since its inception. With new technologies like AI, machine learning, and Web3, the future holds endless possibilities for how we build and interact with web applications. Keeping up with these trends is crucial for developers aiming to stay ahead in the game.",
-    "image": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "category": "Web",
-    "author": "Tahmid",
-    "authorImage": "https://i.imghippo.com/files/sPa3039ls.jpeg",
-    "date":"--/--/2025"
+    "date":"22/01/2025"
   }
 
 ]

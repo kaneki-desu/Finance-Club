@@ -17,8 +17,8 @@ const Footer = () => {
 		
 		<div>
 			<h2 class="text-lg font-semibold">Contact Us</h2>
-			<p class="mt-2 text-gray-400">Email: financeClub@gmail.com</p>
-			<p class="text-gray-400">Phone: +91 99547 22871</p>
+			<p class="mt-2 text-gray-400">Email: financeclubnits@gmail.com</p>
+			<p class="text-gray-400">Phone: +91 82106 84165</p>
 		</div>
 
 		
