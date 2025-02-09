@@ -159,7 +159,7 @@ export const data = [
     position: "Member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/leena.mahaseth",
-    instagram: "https://www.instagram.com/aar_nab/profilecard/?igsh=MTdlNnhvdGsyMnNvdA==",
+    instagram: "https://www.instagram.com/lee._.na04/",
     linkedin: "https://linkedin.com/in/leena-mahaseth-240b45285",
   },
   {
