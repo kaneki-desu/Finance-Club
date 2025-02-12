@@ -3,42 +3,42 @@ export const data = [
     name: "Vijay Kumar Kasaudhan",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356506/Vikash_Kumar_Kasaudhan_nyqdzb.jpg",
     position: "President",
-    facebook: "https://www.facebook.com/sandeep.pandey.5437",
-    instagram: "https://www.instagram.com/vijay_kumar", 
-    linkedin: "https://www.linkedin.com/in/vijay-kumar-kasaudhan",
+    facebook: "https://www.facebook.com/vijay.iti.9",
+    instagram: "https://www.instagram.com/its__vkk/", 
+    linkedin: "https://www.linkedin.com/in/vijay-kasaudhan-a6b16822a/",
   },
   {
     name: "Ayush Mani",
     // imageUrl: "https://i.imghippo.com/files/7nprJ1728924749.jpg",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/Ayush_Mani_xbywqo.jpg",
     position: "Vice President",
-    facebook: "https://www.facebook.com/sandeep.pandey.5437",
-    instagram: "https://www.instagram.com/ayush_mani",
-    linkedin: "https://www.linkedin.com/in/ayush-mani",
+    facebook: "https://www.facebook.com/profile.php?id=100088108511997",
+    instagram: "https://www.instagram.com/ayushmaniroy/",
+    linkedin: "https://www.linkedin.com/in/ayush-maniroy-358458258/",
   },
   {
     name: "Harshit Bharali",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356508/Harshit_Bharali_mulai7.jpg",
     position: "Design Head",
-    facebook: "https://www.facebook.com/harshit.bharali",
-    instagram: "https://www.instagram.com/harshit.bharali", 
-    linkedin: "https://www.linkedin.com/in/harshit-bharali",
+    facebook: "https://www.facebook.com/harshit.bharali.1",
+    instagram: "https://www.instagram.com/harshit_bharali", 
+    linkedin: "https://www.linkedin.com/in/harshit-bharali-183949257",
   },
   {
     name: "Anshu Jaiswal",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738345362/Anshu_d1dvhe.jpg",
     position: "Technical Head",
-    facebook: "https://www.facebook.com/anshu.jaiswal",
-    instagram: "https://www.instagram.com/anshu.jaiswal",
-    linkedin: "https://www.linkedin.com/in/anshu-jaiswal",
+    facebook: "https://www.facebook.com/profile.php?id=100051728930235&mibextid=ZbWKwL",
+    instagram: "https://www.instagram.com/anshu.__jaiswal/profilecard/?igsh=ZDUyc3V1cjh5dzRr",
+    linkedin: "https://www.linkedin.com/in/anshu172",
   },
   {
     name: "Mriganka",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356506/Untitled_jdmiu0.jpg",
     position: "Marketing Head",
-    facebook: "https://www.facebook.com/mriganka",
-    instagram: "https://www.instagram.com/mriganka",
-    linkedin: "https://www.linkedin.com/in/mriganka",
+    facebook: "https://www.facebook.com/profile.php?id=100063735820081",
+    instagram: "https://www.instagram.com/mriganka_baishya?igsh=MTlqcGNkZ3pka2t2dQ%3D%3D&utm_source=qr",
+    linkedin: "https://www.linkedin.com/in/mriganka-baishya-802796253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
     name: "Prince Kumar",
@@ -52,9 +52,9 @@ export const data = [
     name: "Akhinur Islam",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/Akhinur_Islam_okrrlj.jpg",
     position: "Technical Analyst ",
-    facebook: "https://www.facebook.com/akhinur.islam",
-    instagram: "https://www.instagram.com/akhinur.islam",
-    linkedin: "https://www.linkedin.com/in/akhinur-islam",
+    facebook: "https://www.facebook.com/akhinur.islam.31945?mibextid=ZbWKwL",
+    instagram: "https://www.instagram.com/akhinoor_01/profilecard/?igsh=d2tmYTYwMDUyaWk2",
+    linkedin: "https://www.linkedin.com/in/akhinur?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 
   
@@ -71,8 +71,8 @@ export const data = [
     team: "Developer",
     facebook: "https://m.facebook.com/profile.php?id=61555019462471",
     instagram: "https://www.instagram.com/priyanshutiwari7405/",
-    linkedin: "https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav",
-    github: "https://github.com/WebberTiwari" 
+    linkedin: "https://www.linkedin.com/in/priyanshu-tiwari-b91539278/",
+    github: "https://github.com/WebberTiwari1" 
   },
   {
     name: "Sibajit Mazumder ",
@@ -127,7 +127,7 @@ export const data = [
     linkedin: "https://www.linkedin.com/in/samir-kumar-b07704281/",
   },
   {
-    name: "Rahul Pandey",
+    name: "Rahul Pandit",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738394054/IMG-20250201-WA0007_tt4gnq.jpg",
     position: "Member",
     team: "PR and Marketing",
@@ -140,6 +140,9 @@ export const data = [
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738395194/IMG-20250201-WA0010_rvus8f.jpg",
     position: "Member",
     team: "PR and Marketing",
+    facebook: "",
+    instagram: "https://www.instagram.com/tejesh_pvtt_?utm_source=qr&igsh=MTl4c29nZ21sNm1uaQ%3D%3D",
+    linkedin: "",
   },
   {
     name: "Aarnab Hazarika",
@@ -156,7 +159,7 @@ export const data = [
     position: "Member",
     team: "PR and Marketing",
     facebook: "https://www.facebook.com/leena.mahaseth",
-    instagram: "https://www.instagram.com/aar_nab/profilecard/?igsh=MTdlNnhvdGsyMnNvdA==",
+    instagram: "https://www.instagram.com/lee._.na04/",
     linkedin: "https://linkedin.com/in/leena-mahaseth-240b45285",
   },
   {
@@ -194,6 +197,15 @@ export const data = [
     facebook: "https://www.facebook.com/vikrant017?mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/vikrant_017/profilecard/?igsh=MWV3aXQ1b3JkZHdjdA==",
     linkedin: "https://www.linkedin.com/in/vikrant-agarwala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Bisal Prasad",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738995601/WhatsApp_Image_2025-02-08_at_11.44.02_5047a7de_pi6bma.jpg",
+    position: "Member",
+    team: "Junior Fundamental Analyst",
+    facebook: "https://www.facebook.com/bisalprasad.biki",
+    instagram: "https://www.facebook.com/bisalprasad.biki",
+    linkedin: "https://www.linkedin.com/in/bisal-prasad-bab004282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Aditya Ranjan ",
@@ -279,6 +291,16 @@ export const data = [
     instagram: "https://www.instagram.com/_d_mahatoo?igsh=MXYzZHNmeW5lcXQ2",
     linkedin: "https://www.linkedin.com/in/dayal-mahatoo-7a4488241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  {
+    name: "Hritik Raj",
+    imageUrl: "https://i.imghippo.com/files/fQB8187k.jpg",
+    position: "Member",
+    team: "PR and Marketing",
+    facebook: "https://www.facebook.com/share/188fVAFATY/",
+    instagram: "https://www.instagram.com/hritik_shrivastva_4r?igsh=MWhnODZ4cm1pZDFlYQ==",
+    linkedin: "https://www.linkedin.com/in/hritikrajnits?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+ 
  
 ]
   

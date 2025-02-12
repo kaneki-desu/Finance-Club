@@ -648,6 +648,7 @@ import { data } from '../assets/TeamData';
 import ParticleBackground from '../Components/Particle';
 import {motion} from  'framer-motion';
 import { fadeIn, StaggeredfadeIn } from '../Components/fadeInAnimation';
+// import pngwing from '../assets/pngwing'
 
 const TeamPage = () => {
   // const [bgImg, setBgImg] = useState(BlackBg);
@@ -693,6 +694,7 @@ const TeamPage = () => {
     viewport={{
       once:true,
     }}
+    
       className="z-[-1000000] flex justify-center min-h-screen bg-transparent"
       style={{
         backgroundColor: themeMode === 'dark' ? 'var(--theme-color-dark)' : 'var(--theme-color-light)',
@@ -703,6 +705,7 @@ const TeamPage = () => {
       }}
     >
       <ParticleBackground id='particle'/>
+      {/* <pngwing /> */}
       <div className="flex flex-col items-center w-[80vw] max-w-screen-lg">
         {/* Team Header */}
         <h1
