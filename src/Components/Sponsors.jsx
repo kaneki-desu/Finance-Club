@@ -90,7 +90,7 @@ export default function SponsorsMarquee() {
        viewport={{
          once:true,
        }}
-      >Sponsers</motion.h1>
+      >Sponsors</motion.h1>
     <div className="  py-4 h-full flex flex-col justify-center" >
       {/* <motion.div
         className="flex space-x-8 w-max bg-green-400"
