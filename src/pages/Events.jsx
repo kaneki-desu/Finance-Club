@@ -370,15 +370,22 @@ import { fadeIn, StaggeredfadeIn } from "../Components/fadeInAnimation";
 
 const upcomingEvents = [
   {
-    title: "Join Arthniti for finance events—Treasure Hunt, Quiz, and Discussions. Sharpen skills and claim your treasure!",
-    startDate: "04.11.2022",
-    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
+    title: "​Swapso and Finance and Investment Club, NIT Silchar presents: Bitcoin India Tour - Silchar Edition . ​This event is a golden opportunity for all Bitcoin enthusiasts to engage, learn, and network. Join us for an insightful session and be part of this transformative journey in the world of Bitcoin.",
+    startDate: "23.03.2025",
+    imageUrl: "https://res.cloudinary.com/dlcmnk3rr/image/upload/v1742300034/485182643_17964548120892751_1846050145700160919_n.webp_jqoivi.webp",
+    eventURL: "https://lu.ma/1b4o0tjs"
   },
-  {
-    title: "Treasure Hunt: A finance-based problem-solving event encouraging teamwork, strategy, and quick thinking while enhancing financial knowledge.",
-    startDate: "04.11.2022",
-    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340104/TreasureHunt_yyhcbr.jpg",
-  },
+  // {
+  //   title: "Join Arthniti for finance events—Treasure Hunt, Quiz, and Discussions. Sharpen skills and claim your treasure!",
+  //   startDate: "04.11.2022",
+  //   imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/OrientationRoadmap_pcncdz.jpg",
+  // },
+  // {
+  //   title: "Treasure Hunt: A finance-based problem-solving event encouraging teamwork, strategy, and quick thinking while enhancing financial knowledge.",
+  //   startDate: "04.11.2022",
+  //   imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340104/TreasureHunt_yyhcbr.jpg",
+  // },
+  
 ];
 
 const speakerSessions = [
@@ -415,7 +422,7 @@ const pastEvent = [
   
 ];
 
-const CourseCard = ({ course ,index}) => (
+const CourseCard = ({ course ,index,eventURL}) => (
 
   
   <motion.div className="relative flex-1 min-w-[300px] max-w-[40%] bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg group h-[440px] mx-auto  "
@@ -427,7 +434,7 @@ const CourseCard = ({ course ,index}) => (
       }}
       custom={index}
       > {/* Increased card height */}
-    <a href="#" className="block p-6 relative overflow-hidden h-full "> {/* Set height for the card content */}
+    <a href={eventURL?eventURL:"#"} className="block p-6 relative overflow-hidden h-full "> {/* Set height for the card content */}
       
       {/* Image used as background without cropping */}
       <div 
@@ -451,7 +458,7 @@ const CourseCard = ({ course ,index}) => (
       {/* Hidden Text */}
       <div className="absolute inset-0 flex items-center justify-center text-center opacity-0 transform translate-y-8 transition-all duration-1000 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 z-10 ">
         <div>
-          <div className="font-bold text-lg mb-4 text-white">{course.title}</div>
+          <div className="font-bold text-lg mb-4 text-white px-2">{course.title}</div>
           {course.startDate && (
             <div className="text-sm text-white">
               Start: <span className="font-bold text-yellow-400">{course.startDate}</span>
@@ -472,11 +479,11 @@ const Events = () => (
   <div className="w-full max-w-5xl mx-auto  p-6">
     <div className="flex flex-wrap justify-center gap-6 py-12">
       <div className="w-full text-center mb-12">
-        <h2 className="text-3xl font-bold ">UpcomingEvents</h2>
+        <h2 className="text-3xl font-bold ">Upcoming Events</h2>
       </div>
       {upcomingEvents.map((course, index) => (
         
-        <CourseCard index={index} course={course} />
+        <CourseCard index={index} course={course} eventURL={course.eventURL} />
       ))}
 
       <div className="w-full text-center my-12">
