@@ -369,12 +369,12 @@ import { fadeIn, StaggeredfadeIn } from "../Components/fadeInAnimation";
 
 
 const upcomingEvents = [
-  {
-    title: "​Swapso and Finance and Investment Club, NIT Silchar presents: Bitcoin India Tour - Silchar Edition . ​This event is a golden opportunity for all Bitcoin enthusiasts to engage, learn, and network. Join us for an insightful session and be part of this transformative journey in the world of Bitcoin.",
-    startDate: "23.03.2025",
-    imageUrl: "https://res.cloudinary.com/dlcmnk3rr/image/upload/v1742300034/485182643_17964548120892751_1846050145700160919_n.webp_jqoivi.webp",
-    eventURL: "https://lu.ma/1b4o0tjs"
-  },
+  // {
+  //   title: "​Swapso and Finance and Investment Club, NIT Silchar presents: Bitcoin India Tour - Silchar Edition . ​This event is a golden opportunity for all Bitcoin enthusiasts to engage, learn, and network. Join us for an insightful session and be part of this transformative journey in the world of Bitcoin.",
+  //   startDate: "23.03.2025",
+  //   imageUrl: "https://res.cloudinary.com/dlcmnk3rr/image/upload/v1742300034/485182643_17964548120892751_1846050145700160919_n.webp_jqoivi.webp",
+  //   eventURL: "https://lu.ma/1b4o0tjs"
+  // },
   // {
   //   title: "Join Arthniti for finance events—Treasure Hunt, Quiz, and Discussions. Sharpen skills and claim your treasure!",
   //   startDate: "04.11.2022",
@@ -389,11 +389,11 @@ const upcomingEvents = [
 ];
 
 const speakerSessions = [
-  {
-    title: "Devayukta Karva Session: Insights from Devayukta Karva on navigating volatile markets, emphasizing intellectual engagement and investment strategies.",
-    startDate: "04.11.2022",
-    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/SpeakerSession_usmppk.jpg",
-  },
+  // {
+  //   title: "Devayukta Karva Session: Insights from Devayukta Karva on navigating volatile markets, emphasizing intellectual engagement and investment strategies.",
+  //   startDate: "04.11.2022",
+  //   imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738340103/SpeakerSession_usmppk.jpg",
+  // },
   
 ];
 
