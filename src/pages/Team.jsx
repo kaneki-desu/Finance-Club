@@ -660,8 +660,9 @@ const TeamPage = () => {
   // Define the role filters for different roles
   const roleFilters = {
     President: (member) => member.position === 'President' || member.position === 'Vice President',
-    Heads: (member) => member.position.includes('Head'),
-    Analysts: (member) => member.position.includes('Analyst'),
+    Heads: (member) => member.position.includes('Head') && !member.position.includes('Co-Head'),
+    Co_Heads: (member) => member.position.includes('Co-Head'),
+    Mentors: (member) => member.position.includes('Mentors') &&  !member.position.includes('Junior'),
     Members: (member) => member.position.toLowerCase() === 'member',
   };
 
@@ -670,12 +671,14 @@ const TeamPage = () => {
 
   // Group "Members" by their teams into sub-categories
   const memberTeams = {
-    Developer: [],
-    'Junior Fundamental Analyst': [],
-    'Junior Technical Analyst': [],
-    'PR and Marketing': [],
-    Content: [],
+     Technical :[],
+    'Event Management and PR' :[],
+   'Marketing & Publicity' :[],
     Design: [],
+   'Content and Research':[],
+    'Market Analysis' :[],
+    'Video Editing' :[],
+   
   };
 
   filteredTeamByRole.forEach((member) => {
@@ -719,7 +722,7 @@ const TeamPage = () => {
 
         {/* Role Selector */}
         <div className="flex justify-evenly w-full absolute z-10 mt-16 pt-6">
-          {['President', 'Heads', 'Analysts', 'Members'].map((role,index) => (
+          {['President', 'Heads','Co_Heads', 'Mentors', 'Members'].map((role,index) => (
             <motion.div
               key={role}
               variants={fadeIn}
