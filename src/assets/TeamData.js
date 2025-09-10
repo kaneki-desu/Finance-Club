@@ -90,7 +90,7 @@ export const data = [
     facebook: "https://www.facebook.com/share/1EcVwnC4ez/",
     instagram: "https://www.instagram.com/siibajit_maz.808/profilecard/?igsh=MW5zY21lMm00emkwNg==",
     linkedin: "https://www.linkedin.com/in/sibajit-mazumder?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    github: "https://github.com/johndoe" 
+
   },
   // {
   //   name: "Tahmid Choudhury",
