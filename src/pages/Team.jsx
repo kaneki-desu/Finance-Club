@@ -818,7 +818,8 @@ const TeamPage = () => {
                     >
                       {team} Team
                     </h2>
-                    <div className="team-grid flex flex-wrap justify-center gap-10 w-full mt-16 p-1">
+                    {/* Reduced top margin between heading and cards */}
+                    <div className="team-grid flex flex-wrap justify-center gap-10 w-full mt-2 p-1">
                       {teamMembers.map((member, index) => (
                         <TeamCard
                           index={index}
