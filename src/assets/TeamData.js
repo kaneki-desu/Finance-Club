@@ -264,6 +264,7 @@ export const data = [
  
   {
     name: "Ronit Raj",
+    
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/20240926_191630_-_RONIT_RAJ_zki9e7.jpg",
     position: "Member",
     team: "Content",
