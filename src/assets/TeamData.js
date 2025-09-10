@@ -269,7 +269,7 @@ export const data = [
   },
   {
     name: "Hritik Raj",
-    imageUrl: "https://i.imghippo.com/files/fQB8187k.jpg",
+    imageUrl: "https://res.cloudinary.com/dtcrfqeza/image/upload/v1757521877/4f730f8a-5011-482b-b196-3ad80873a73c_ehqrth.jpg",
     position: "Publicity  Co-Head",
     facebook: "https://www.facebook.com/share/188fVAFATY/",
     instagram: "https://www.instagram.com/hritik_shrivastva_4r?igsh=MWhnODZ4cm1pZDFlYQ==",
