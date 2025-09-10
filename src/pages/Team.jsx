@@ -1,4 +1,5 @@
 
+
 import React, { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../contexts/theme';
 import TeamCard from '../Components/TeamCard';
@@ -17,6 +18,7 @@ const TeamPage = () => {
 
   // Define the role filters for different roles
   const roleFilters = {
+    Mentors: (member) => member.position.includes('Mentors') &&  !member.position.includes('Junior'),
     President: (member) => member.position === 'President' || member.position === 'Vice President',
     Heads: (member) => member.position.includes('Head') && !member.position.includes('Co-Head'),
     Co_Heads: (member) => member.position.includes('Co-Head'),
@@ -80,7 +82,7 @@ const TeamPage = () => {
 
         {/* Role Selector */}
         <div className="flex justify-evenly w-full absolute z-10 mt-16 pt-6">
-          {['President', 'Heads','Co_Heads', 'Mentors', 'Members'].map((role,index) => (
+          {['Mentors', 'President', 'Heads','Co_Heads', 'Members'].map((role,index) => (
             <motion.div
               key={role}
               variants={fadeIn}

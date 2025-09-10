@@ -56,7 +56,7 @@ const withAnimation = (Component) => {
         // Trigger the animation using Framer Motion controls
         controls.start("animate");
         setLoadOnce(true)
-      }, loadOnce?1000:3000);
+      }, loadOnce?0:0);
     }, [controls,loadOnce]);
 
     return (

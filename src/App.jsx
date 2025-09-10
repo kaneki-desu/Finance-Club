@@ -12,19 +12,17 @@ import Sponser from './pages/Sponser';
 import Events from './pages/Events';
 import Team from './pages/Team';
 import Blog2 from './pages/Blog2';
+import Blog from './pages/Blog';
+import Footer from './Components/Footer';
+import LoadingScreen from './Components/LoadingScreen';
+import Gallery from './pages/Gallery';
 
 // Context Provider
 import { ThemeProvider } from './contexts/theme';
-import Blog from './pages/Blog';
-
-// import Blog from './pages/Blog';
-import Footer from './Components/Footer';
-import LoadingScreen from './Components/LoadingScreen';
-import AnimatedWrapper from './Components/AnimatedWrapper';
-import Gallery from './pages/Gallery';
 
 function App() {
   const [themeMode, setThemeMode] = useState('dark');
+  const [loading, setLoading] = useState(true);
 
   // Functions to toggle theme
   const darkTheme = () => setThemeMode('dark');
@@ -36,10 +34,21 @@ function App() {
     htmlElement.classList.add(themeMode);
   }, [themeMode]);
 
+  // Simulate loading (you can replace this with API call / real check)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // 1.5s fake loading
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <LoadingScreen />; // ✅ Only show while loading
+  }
+
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <Router>
-        <LoadingScreen/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -50,9 +59,9 @@ function App() {
           <Route path="/blog" element={<Blog2 />} />
         </Routes>
       </Router>
-      <Footer/>
+      <Footer />
     </ThemeProvider>
   );
 }
 
-export default (App);
+export default App;

@@ -15,6 +15,17 @@ export const data = [
     instagram: "https://www.instagram.com/prince.kumar",
     linkedin: "https://www.linkedin.com/in/prince-kumar",
   },
+  
+  
+  {
+    name: "Ayush Mani",
+    // imageUrl: "https://i.imghippo.com/files/7nprJ1728924749.jpg",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/Ayush_Mani_xbywqo.jpg",
+    position: "Mentors",
+    facebook: "https://www.facebook.com/profile.php?id=100088108511997",
+    instagram: "https://www.instagram.com/ayushmaniroy/",
+    linkedin: "https://www.linkedin.com/in/ayush-maniroy-358458258/",
+  },
   // {
   //   name: "Ayush Mani",
   //   // imageUrl: "https://i.imghippo.com/files/7nprJ1728924749.jpg",
@@ -24,14 +35,7 @@ export const data = [
   //   instagram: "https://www.instagram.com/ayushmaniroy/",
   //   linkedin: "https://www.linkedin.com/in/ayush-maniroy-358458258/",
   // },
-  {
-    name: "Harshit Bharali",
-    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356508/Harshit_Bharali_mulai7.jpg",
-    position: "Mentors",
-    facebook: "https://www.facebook.com/harshit.bharali.1",
-    instagram: "https://www.instagram.com/harshit_bharali", 
-    linkedin: "https://www.linkedin.com/in/harshit-bharali-183949257",
-  },
+  
   {
     name: "Anshu Jaiswal",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738345362/Anshu_d1dvhe.jpg",
@@ -39,6 +43,14 @@ export const data = [
     facebook: "https://www.facebook.com/profile.php?id=100051728930235&mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/anshu.__jaiswal/profilecard/?igsh=ZDUyc3V1cjh5dzRr",
     linkedin: "https://www.linkedin.com/in/anshu172",
+  },
+  {
+    name: "Harshit Bharali",
+    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356508/Harshit_Bharali_mulai7.jpg",
+    position: "Mentors",
+    facebook: "https://www.facebook.com/harshit.bharali.1",
+    instagram: "https://www.instagram.com/harshit_bharali", 
+    linkedin: "https://www.linkedin.com/in/harshit-bharali-183949257",
   },
   {
     name: "Mriganka",
@@ -243,6 +255,7 @@ export const data = [
  
   {
     name: "Ronit Raj",
+    
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/20240926_191630_-_RONIT_RAJ_zki9e7.jpg",
     position: "Vice President",
     facebook: "https://www.facebook.com/profile.php?id=61555882343317",
