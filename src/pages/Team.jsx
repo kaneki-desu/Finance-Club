@@ -720,37 +720,90 @@ const TeamPage = () => {
           Meet Our Team
         </h1>
 
-        {/* Role Selector */}
-        <div className="flex justify-evenly w-full absolute z-10 mt-16 pt-6">
-          {['President', 'Heads','Co_Heads', 'Mentors', 'Members'].map((role,index) => (
-            <motion.div
-              key={role}
-              variants={fadeIn}
-              initial='initial'
-              whileInView='animate'
-              viewport={{
-                once:true,
-              }}
-              custom={index}
-              onClick={() => setSelectedRole(role)}
-              className={`p-1  px-3 rounded-full shadow-md font-semibold cursor-pointer transition-all duration-200 ${
-                selectedRole === role
-                  ? themeMode === 'light'
-                    ? 'bg-black text-white hover:bg-gray-800'
-                    : 'bg-white text-black hover:bg-gray-300'
-                  : themeMode === 'light'
-                  ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-              }`}
-            >
-              {role}
-            </motion.div>
-          ))}
+        {/* Role Selector (responsive) */}
+        <div className="w-full absolute z-10 mt-16 pt-6">
+          {/* Desktop / Tablet: single row */}
+          <div className="hidden md:flex justify-evenly">
+            {['Mentors','President','Heads','Co_Heads','Members'].map((role,index) => (
+              <motion.div
+                key={role}
+                variants={fadeIn}
+                initial='initial'
+                whileInView='animate'
+                viewport={{ once:true }}
+                custom={index}
+                onClick={() => setSelectedRole(role)}
+                className={`p-1 px-3 rounded-full shadow-md font-semibold cursor-pointer transition-all duration-200 ${
+                  selectedRole === role
+                    ? themeMode === 'light'
+                      ? 'bg-black text-white hover:bg-gray-800'
+                      : 'bg-white text-black hover:bg-gray-300'
+                    : themeMode === 'light'
+                    ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                }`}
+              >
+                {role.replace('_',' ')}
+              </motion.div>
+            ))}
+          </div>
+          {/* Mobile: two lines */}
+            <div className="flex flex-col gap-3 md:hidden">
+              <div className="flex justify-center gap-4">
+                {['Mentors','President','Heads'].map((role,index) => (
+                  <motion.div
+                    key={role}
+                    variants={fadeIn}
+                    initial='initial'
+                    whileInView='animate'
+                    viewport={{ once:true }}
+                    custom={index}
+                    onClick={() => setSelectedRole(role)}
+                    className={`p-1 px-3 rounded-full shadow-md text-sm font-semibold cursor-pointer transition-all duration-200 ${
+                      selectedRole === role
+                        ? themeMode === 'light'
+                          ? 'bg-black text-white hover:bg-gray-800'
+                          : 'bg-white text-black hover:bg-gray-300'
+                        : themeMode === 'light'
+                        ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                        : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                    }`}
+                  >
+                    {role.replace('_',' ')}
+                  </motion.div>
+                ))}
+              </div>
+              <div className="flex justify-center gap-4">
+                {['Co_Heads','Members'].map((role,index) => (
+                  <motion.div
+                    key={role}
+                    variants={fadeIn}
+                    initial='initial'
+                    whileInView='animate'
+                    viewport={{ once:true }}
+                    custom={index+3}
+                    onClick={() => setSelectedRole(role)}
+                    className={`p-1 px-3 rounded-full shadow-md text-sm font-semibold cursor-pointer transition-all duration-200 ${
+                      selectedRole === role
+                        ? themeMode === 'light'
+                          ? 'bg-black text-white hover:bg-gray-800'
+                          : 'bg-white text-black hover:bg-gray-300'
+                        : themeMode === 'light'
+                        ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                        : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                    }`}
+                  >
+                    {role.replace('_',' ')}
+                  </motion.div>
+                ))}
+              </div>
+            </div>
         </div>
 
         {/* Display team categories for "Members" */}
         {selectedRole === 'Members' && (
-          <motion.div className="team-sections w-full mt-16">
+          // Increased top margin to prevent overlap/clash with first team (Technical)
+          <motion.div className="team-sections w-full mt-28 md:mt-20 lg:mt-16">
             {Object.keys(memberTeams).map((team) => {
               const teamMembers = memberTeams[team];
 
