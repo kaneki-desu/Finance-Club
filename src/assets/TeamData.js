@@ -26,6 +26,16 @@ export const data = [
     instagram: "https://www.instagram.com/ayushmaniroy/",
     linkedin: "https://www.linkedin.com/in/ayush-maniroy-358458258/",
   },
+  // {
+  //   name: "Ayush Mani",
+  //   // imageUrl: "https://i.imghippo.com/files/7nprJ1728924749.jpg",
+  //   imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356500/Ayush_Mani_xbywqo.jpg",
+  //   position: "Vice President",
+  //   facebook: "https://www.facebook.com/profile.php?id=100088108511997",
+  //   instagram: "https://www.instagram.com/ayushmaniroy/",
+  //   linkedin: "https://www.linkedin.com/in/ayush-maniroy-358458258/",
+  // },
+  
   {
     name: "Anshu Jaiswal",
     imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738345362/Anshu_d1dvhe.jpg",

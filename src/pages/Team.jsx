@@ -21,7 +21,8 @@ const TeamPage = () => {
     Mentors: (member) => member.position.includes('Mentors') &&  !member.position.includes('Junior'),
     President: (member) => member.position === 'President' || member.position === 'Vice President',
     Heads: (member) => member.position.includes('Head') && !member.position.includes('Co-Head'),
-    Co_Heads: (member) => member.position.includes('Co-Head'),    
+    Co_Heads: (member) => member.position.includes('Co-Head'),
+    Mentors: (member) => member.position.includes('Mentors') &&  !member.position.includes('Junior'),
     Members: (member) => member.position.toLowerCase() === 'member',
   };
 
