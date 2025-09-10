@@ -243,7 +243,7 @@ export const data = [
  
   {
     name: "Ronit Raj",
-    imageUrl: "https://res.cloudinary.com/duqavhkag/image/upload/v1738356499/20240926_191630_-_RONIT_RAJ_zki9e7.jpg",
+    imageUrl: "https://res.cloudinary.com/dtcrfqeza/image/upload/v1757519000/20250313_104913_1_kzlk9d.jpg",
     position: "Vice President",
     facebook: "https://www.facebook.com/profile.php?id=61555882343317",
     instagram: "https://www.instagram.com/ro.nits?igsh=MXRreWphN2U0ejNsbw==",
@@ -288,14 +288,14 @@ export const data = [
     linkedin: "https://www.linkedin.com/in/raushan-kumar-ab9b22325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
-    name: "Nitesh kumar",
-    imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757353212/WhatsApp_Image_2025-09-08_at_11.08.33_PM_qvsxmo.jpg",
-    position: "Member",
-    team: "Technical",
-    facebook: "https://www.facebook.com/profile.php?id=61567329151177",
-    instagram: "https://www.instagram.com/niteshgupta1129?igsh=YzljYTk1ODg3Zg==",
-    linkedin: "https://www.linkedin.com/in/nitesh-kumar-017a86358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
+  name: "Dhrishit Goswami",
+  imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757350147/E1C19C81-9E98-44CA-862A-3543DEC40A3E_-_Dhrishit_Goswami_l56crv.jpg",
+  position: "Member",
+  team: "Technical",
+  facebook: "https://m.facebook.com/61579786071370/",
+  instagram: "https://www.instagram.com/_dhrxht_?igsh=MTB6NGZyZTN2b3QyZg%3D%3D&utm_source=qr",
+  linkedin: "https://www.linkedin.com/in/dhrishitgoswami?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+},
   {
     name: "Chirag khandelwal",
     imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757037840/PIE_BOND_xkbqa8.jpg",
@@ -353,7 +353,7 @@ export const data = [
   // },
   {
     name: "Adarsh Raj",
-    imageUrl: "https://drive.google.com/open?id=1opSq98aa04ItHhTu7vP37QlmpVbV34dZ",
+    imageUrl: "https://res.cloudinary.com/dtcrfqeza/image/upload/v1757519818/Screenshot_20250826_233512_WhatsApp_-_Adarsh_Raj_e8ix8e.jpg",
     position: "Member",
     team: "Event Management and PR",
     facebook: "No",
@@ -460,6 +460,14 @@ export const data = [
     linkedin: "https://www.linkedin.com/in/deepak-gupta-19708a339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
   {
+    name: "Ashish Upadhyay",
+    imageUrl: "https://res.cloudinary.com/dtcrfqeza/image/upload/v1757518999/30b88e06-9737-4b59-a867-82389ef88469_wz6tca.jpg",
+    position: "Member",
+    team: "Video Editing",
+    instagram: "https://www.instagram.com/areyladkaengineerhai?igsh=M3hvaGwzZ2U2dnJl",
+    linkedin: "https://www.linkedin.com/in/ashish-upadhyay-929386217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
+  {
   name: "Rahul Kumar Priyadarshi",
   imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757359233/Screenshot_20250827-234152.Gallery_2_n5atez.jpg",
   position: "Member",
@@ -537,7 +545,7 @@ export const data = [
 },
 {
   name: "Shubhrajit Das",
-  imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757350149/IMG_1640_1_-_Shubhrajit_Das_egpb3l.heic",
+  imageUrl: "https://res.cloudinary.com/dtcrfqeza/image/upload/v1757520360/520822693_18069498128511452_371053538709171802_n_kcceh7.jpg",
   position: "Member",
     team: "Event Management and PR",
   facebook: "https://www.facebook.com/share/1Zir7ENnPE/",
@@ -644,14 +652,14 @@ position: "Member",
   linkedin: "https://www.linkedin.com/in/vishnu-sharma-931001211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 },
 {
-  name: "Dhrishit Goswami",
-  imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757350147/E1C19C81-9E98-44CA-862A-3543DEC40A3E_-_Dhrishit_Goswami_l56crv.jpg",
-  position: "Member",
+    name: "Nitesh kumar",
+    imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757353212/WhatsApp_Image_2025-09-08_at_11.08.33_PM_qvsxmo.jpg",
+    position: "Member",
     team: "Technical",
-  facebook: "https://m.facebook.com/61579786071370/",
-  instagram: "https://www.instagram.com/_dhrxht_?igsh=MTB6NGZyZTN2b3QyZg%3D%3D&utm_source=qr",
-  linkedin: "https://www.linkedin.com/in/dhrishitgoswami?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-},
+    facebook: "https://www.facebook.com/profile.php?id=61567329151177",
+    instagram: "https://www.instagram.com/niteshgupta1129?igsh=YzljYTk1ODg3Zg==",
+    linkedin: "https://www.linkedin.com/in/nitesh-kumar-017a86358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
  {
     name: "AMIT SINGH",
     imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757350148/IMG_20250501_000210_141_-_Amit_Singh_y0xe7g.webp",
