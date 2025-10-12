@@ -288,6 +288,15 @@ export const data = [
     linkedin: "https://www.linkedin.com/in/raushan-kumar-ab9b22325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
+    name: "Nitesh kumar",
+    imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757353212/WhatsApp_Image_2025-09-08_at_11.08.33_PM_qvsxmo.jpg",
+    position: "Member",
+    team: "Technical",
+    facebook: "https://www.facebook.com/profile.php?id=61567329151177",
+    instagram: "https://www.instagram.com/niteshgupta1129?igsh=YzljYTk1ODg3Zg==",
+    linkedin: "https://www.linkedin.com/in/nitesh-kumar-017a86358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
   name: "Dhrishit Goswami",
   imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757350147/E1C19C81-9E98-44CA-862A-3543DEC40A3E_-_Dhrishit_Goswami_l56crv.jpg",
   position: "Member",
@@ -651,15 +660,6 @@ position: "Member",
   instagram: "https://www.instagram.com/v1shnusharma?igsh=bzVvMXRuNTJqbWRu",
   linkedin: "https://www.linkedin.com/in/vishnu-sharma-931001211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 },
-{
-    name: "Nitesh kumar",
-    imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757353212/WhatsApp_Image_2025-09-08_at_11.08.33_PM_qvsxmo.jpg",
-    position: "Member",
-    team: "Technical",
-    facebook: "https://www.facebook.com/profile.php?id=61567329151177",
-    instagram: "https://www.instagram.com/niteshgupta1129?igsh=YzljYTk1ODg3Zg==",
-    linkedin: "https://www.linkedin.com/in/nitesh-kumar-017a86358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
  {
     name: "AMIT SINGH",
     imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1757350148/IMG_20250501_000210_141_-_Amit_Singh_y0xe7g.webp",
