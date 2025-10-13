@@ -369,6 +369,12 @@ import { fadeIn, StaggeredfadeIn } from "../Components/fadeInAnimation";
 
 
 const upcomingEvents = [
+   {
+    title: "​webinar : Ai & Stock market",
+    startDate: "15.10.2025",
+    imageUrl: "https://res.cloudinary.com/dgqpu7qic/image/upload/v1760280076/WhatsApp_Image_2025-10-12_at_7.19.35_PM_ghmjjx.jpg",
+    eventURL: "https://luma.com/fncxgdju"
+  },
   // {
   //   title: "​Swapso and Finance and Investment Club, NIT Silchar presents: Bitcoin India Tour - Silchar Edition . ​This event is a golden opportunity for all Bitcoin enthusiasts to engage, learn, and network. Join us for an insightful session and be part of this transformative journey in the world of Bitcoin.",
   //   startDate: "23.03.2025",
