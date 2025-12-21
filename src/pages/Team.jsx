@@ -7,13 +7,14 @@ import { data } from '../assets/TeamData';
 import ParticleBackground from '../Components/Particle';
 import {motion} from  'framer-motion';
 import { fadeIn, StaggeredfadeIn } from '../Components/fadeInAnimation';
+import useIsMobile from '../utils/useIsMobile';
 // import pngwing from '../assets/pngwing'
 
 const TeamPage = () => {
   // const [bgImg, setBgImg] = useState(BlackBg);
   const { themeMode } = useContext(ThemeContext); // Get the current theme mode (dark or light)
 
-
+  const isMobile = useIsMobile();
   const [selectedRole, setSelectedRole] = useState('President');
 
   // Define the role filters for different roles
@@ -66,7 +67,7 @@ const TeamPage = () => {
         paddingTop: '70px', // Adjust this if the navbar height is different
       }}
     >
-      <ParticleBackground id='particle'/>
+      {!isMobile && <ParticleBackground id='particle'/> }
       {/* <pngwing /> */}
       <div className="flex flex-col items-center w-[80vw] max-w-screen-lg">
         {/* Team Header */}
