@@ -4,7 +4,7 @@ export const fadeIn={
       return {
         opacity:1,y:0,filter:"blur(0px)",scale:1,
         transition:{
-          duration:1,
+          duration:0.4,
           ease:"easeInOut",
         }
       }
@@ -16,9 +16,9 @@ export const StaggeredfadeIn={
       return {
         opacity:1,y:0,filter:"blur(0px)",scale:1,
         transition:{
-          duration:1,
+          duration:0.5,
           ease:"easeInOut",
-          delay:0.5*index
+          delay:0.4*index
         }
       }
     }

@@ -17,7 +17,7 @@ const fadeINAnimationVariants={
     return {
       opacity:1,y:0,x:0,filter:"blur(0px)",
       transition:{
-        duration:1,
+        duration:0.5,
         delay:0.05 * index,
       }
     }

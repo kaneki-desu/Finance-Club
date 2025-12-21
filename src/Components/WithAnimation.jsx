@@ -9,39 +9,9 @@ const fadeInAnimationVariants = {
     y: 0,
     filter: "blur(0px)",
     scale: 1,
-    transition: { duration: 1, ease: "easeInOut", delay: 0 },
+    transition: { duration: 0.5, ease: "easeInOut", delay: 0 },
   },
 };
-const yfadeInAnimationVariants = {
-  initial: { opacity: 0, y: 20, filter: "blur(10px)" },
-  animate: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-    scale: 1,
-    transition: { duration: 1, ease: "easeInOut", delay: 0 },
-  },
-};
-
-const yfadeInAnimationVariant1={
-    initial: { opacity: 0, y: 20, filter: "blur(10px)" },
-  animate: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 1, ease: "easeInOut", delay: 10},
-  },
-}
-const yfadeInAnimationVariant2={
-    initial: { opacity: 0, y: 20, filter: "blur(10px)" },
-  animate: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-    scale: 1,
-    transition: { duration: 1, ease: "easeInOut", delay: 2 },
-  },
-}
 const withAnimation = (Component) => {
   return function AnimatedComponent(props) {
     const controls = useAnimation();

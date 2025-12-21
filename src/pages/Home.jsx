@@ -8,9 +8,6 @@ import ParticleBackground from '../Components/Particle';
 import TimelineStep from '../Components/Timeline';
 import Message from '../Components/Message';
 import Sponsers from '../Components/Sponsors';
-import { motion } from 'framer-motion';
-import AnimatedWrapper from '../Components/AnimatedWrapper';
-import withAnimation from '../Components/WithAnimation';
 
  '../Components/Timeline';
 const Home = () => {

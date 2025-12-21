@@ -7,7 +7,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
-    transition: { duration: 1, ease: "easeInOut", delay:3},
+    transition: { duration: 0.1, ease: "easeInOut", delay:3},
     
   },
 };
